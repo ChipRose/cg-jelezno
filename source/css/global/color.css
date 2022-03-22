@@ -1,0 +1,6 @@
+:root {
+  --cl-bg-body-from: rgb(30 44 56);
+  --cl-bg-body-to: rgb(27 69 105);
+  --cl-bg-container: rgb(255 255 255);
+  --cl-shd-container: rgb(0 19 35 /0.4);
+}

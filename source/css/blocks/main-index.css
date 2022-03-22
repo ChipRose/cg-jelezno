@@ -1,0 +1,5 @@
+.main-index__container {
+  margin: 0 auto;
+  width: var(--width-container);
+  height: 100%;
+}

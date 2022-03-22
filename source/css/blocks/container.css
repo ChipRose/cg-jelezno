@@ -1,0 +1,5 @@
+.container {
+  border-radius: 8px;
+  background-color: var(--cl-bg-container);
+  box-shadow: 0 -6px 20px var(--cl-shd-container);
+}
