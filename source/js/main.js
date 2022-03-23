@@ -1,12 +1,11 @@
-import './../css/style.css';
+import './../sass/style.scss';
 
 import { getData } from './api.js';
+import { renderCard } from './render-card.js';
 
 getData(
   (flats) => {
-    console.log(flats);
+    renderCard(flats);
   },
-  () => {
-    throw new Error('Ошибка');
-  },
+  () => {throw new Error('Ошибка')},
 );

@@ -11,11 +11,35 @@
 <body class="body page__body">
   <main class="main-index">
     <div class="container main-index__container">
-      <p>kkjkj</p>
+      <section class="flats">
+        <h1 class="title flats__title"></h1>
+        <ul class="list flats__list"></ul>
+      </section>
     </div>
   </main>
   <!-- Product card template -->
-  <template id=""></template>
+  <template id="flat-card">
+    <li class="flats__item">
+      <a class="link flats__link" href="#">
+        <div class="flats__text-block">
+          <div class="flats__title-block">
+            <h2 class="title flats__title"></h2>
+            <svg class="flats__icon" width="21" height="18" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.3951 5.58185C18.2552 3.47272 14.7727 3.47272 12.6329 5.58185L11.5 6.7398L10.3671 5.6232C8.22727 3.51407 4.74476 3.51407 2.6049 5.6232C0.465035 7.73234 0.465035 11.1648 2.6049 13.274L11.5 22L20.3951 13.2326C22.535 11.1235 22.535 7.69098 20.3951 5.58185Z" />
+            </svg>
+          </div>
+          <h3 class="title flats__subtitle"></h3>
+          <span class="text flats__quantity"></span>
+          <span class="text flats__min-price"></span>
+        </div>
+        <div class="flats__image-block">
+          <img class="img flats__img" width="246" height="192" src="" alt="Планировка квартиры">
+        </div>
+      </a>
+    </li>
+  </template>
   <script src="js/main.bundle.js" defer></script>
 </body>
 

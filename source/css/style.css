@@ -1,9 +1,0 @@
-@import "~normalize.css";
-@import "./global/color.css";
-@import "./global/variables.css";
-/* Common Styles */
-@import "./blocks/page.css";
-@import "./blocks/body.css";
-@import "./blocks/container.css";
-/* Main Index */
-@import "./blocks/main-index.css";

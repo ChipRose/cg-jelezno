@@ -20,7 +20,6 @@ function optimization() {
   if (isProd) {
     configObj = [
       new TerserWebpackPlugin({
-
       }),
       new ImageMinimizerPlugin({
         minimizer: {
@@ -107,10 +106,11 @@ module.exports = {
       },
       {
         //Styles
-        test: /\.css$/i,
+        test: /\.scss$/i,
         use: [
           { loader: MiniCssExtractPlugin.loader },
           { loader: 'css-loader', options: { sourceMap: true, url: false } },
+          { loader: 'sass-loader'},
         ],
       },
     ],

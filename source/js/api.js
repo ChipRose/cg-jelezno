@@ -5,8 +5,7 @@ const GET_LINK = 'https://23.javascript.pages.academy/keksobooking/data404';
 const getData = (onSuccess, onError) => {
   fetch(GET_LINK)
     .then((response) => {
-      let flats = response.ok? response.json(): data;
-      return flats;
+      return response.ok? response.json(): data;
     })
     .then((flats) => onSuccess(flats))
     .catch(() => onError());

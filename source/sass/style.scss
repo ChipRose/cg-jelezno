@@ -1,0 +1,10 @@
+@import "~normalize.css";
+@import "./global/color.scss";
+@import "./global/variables.scss";
+@import "./global/font.scss";
+/* Common Styles */
+@import "./blocks/page.scss";
+@import "./blocks/body.scss";
+@import "./blocks/container.scss";
+/* Main Index */
+@import "./blocks/main-index.scss";

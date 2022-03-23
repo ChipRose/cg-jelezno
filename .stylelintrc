@@ -1,5 +1,5 @@
 {
-  "extends": "stylelint-config-standart",
+  "extends": "stylelint-config-htmlacademy",
 
   "rules": {
     "declaration-no-important": true,

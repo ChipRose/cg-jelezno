@@ -1,5 +1,7 @@
 .main-index__container {
+  padding: 30px 27px;
   margin: 0 auto;
   width: var(--width-container);
   height: 100%;
+  box-sizing:border-box;
 }
