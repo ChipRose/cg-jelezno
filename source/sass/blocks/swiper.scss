@@ -5,7 +5,7 @@
 // Pagination
 
 .swiper .swiper-pagination {
-  height: 3px;
+  height: 10px;
   border: 2px solid red;
   z-index: 100;
   left: 0;
@@ -19,6 +19,7 @@
   border-radius: 0;
   opacity: 1;
   background-color: var(--cl-bg-slider-pagination);
+  cursor: pointer;
 }
 
 .swiper-pagination > .swiper-pagination-bullet-active {

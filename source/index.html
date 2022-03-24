@@ -16,7 +16,36 @@
         <ul class="clear--list flats__list"></ul>
       </section>
       <section class="filters main-index__filters">
-        <form action=""></form>
+        <form action="#" autocomplete="off">
+          <fieldset class="clear--fieldset rooms-quantity">
+            <legend class="filters__legend">
+              Количество комнат
+            </legend>
+            <input class="visually-hidden rooms-quantity__checkbox" type="checkbox" name="rooms" value="0" id="rooms-0">
+            <label class="rooms-quantity__label" for="rooms-0">C</label>
+            <input class="visually-hidden rooms-quantity__checkbox" type="checkbox" name="rooms" value="1" id="rooms-1">
+            <label class="rooms-quantity__label" for="rooms-1">1</label>
+            <input class="visually-hidden rooms-quantity__checkbox" type="checkbox" name="rooms" value="1+"
+              id="rooms-1+">
+            <label class="rooms-quantity__label" for="rooms-1+">1+</label>
+            <input class="visually-hidden rooms-quantity__checkbox" type="checkbox" name="rooms" value="2" id="rooms-2">
+            <label class="rooms-quantity__label" for="rooms-2">2</label>
+            <input class="visually-hidden rooms-quantity__checkbox" type="checkbox" name="rooms" value="2+"
+              id="rooms-2+">
+            <label class="rooms-quantity__label" for="rooms-2+">2+</label>
+            <input class="visually-hidden rooms-quantity__checkbox" type="checkbox" name="rooms" value="3" id="rooms-3">
+            <label class="rooms-quantity__label" for="rooms-3">3</label>
+            <input class="visually-hidden rooms-quantity__checkbox" type="checkbox" name="rooms" value="3+"
+              id="rooms-3+">
+            <label class="rooms-quantity__label" for="rooms-3+">3+</label>
+            <input class="visually-hidden rooms-quantity__checkbox" type="checkbox" name="rooms" value="4+"
+              id="rooms-4+">
+            <label class="rooms-quantity__label" for="rooms-4+">4...</label>
+          </fieldset>
+          <fielset class="plan-features">
+            <input class="visually-hidden plan-features__checkbox" type="checkbox" name="plans" value="more-toilets">
+          </fielset>
+        </form>
       </section>
     </div>
   </main>
@@ -41,7 +70,7 @@
           <span class="text flats__min-price"></span>
         </div>
         <a class="clear--link card-button flats__button" href="#">Выбери свою</a>
-        <div class="flats__image-block swiper slider">
+        <div class="flats__image-block swiper">
           <ul class="clear--list  swiper-wrapper slider__list">
             <li class="swiper-slide slider__item">
               <img class="clear--img flats__img" width="246" height="192" src="" alt="Планировка квартиры">

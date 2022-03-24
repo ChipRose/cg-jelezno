@@ -2,9 +2,10 @@ import 'swiper/scss';
 import 'swiper/scss/pagination';
 
 import Swiper, { Pagination } from 'swiper';
-Swiper.use([ Pagination ]);
 
 const sliderOptions = {
+  modules: [Pagination],
+
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -12,4 +13,6 @@ const sliderOptions = {
   loop: true,
 };
 
-new Swiper('.flats__item', sliderOptions);
+const slider = new Swiper('.slider', sliderOptions);
+
+export {slider};

@@ -5,7 +5,7 @@
   height: 100%;
   box-sizing:border-box;
   display: grid;
-  grid-template-columns: $width-content 1fr;
+  grid-template-columns: $width-content auto;
   grid-template-rows: min-content;
 }
 
