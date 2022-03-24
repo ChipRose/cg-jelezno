@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page page--clear" lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -11,36 +11,50 @@
 <body class="body page__body">
   <main class="main-index">
     <div class="container main-index__container">
-      <section class="flats">
-        <h1 class="title flats__title"></h1>
-        <ul class="list flats__list"></ul>
+      <section class="flats main-index__content">
+        <h1 class="clear--title flats__title"></h1>
+        <ul class="clear--list flats__list"></ul>
+      </section>
+      <section class="filters main-index__filters">
+        <form action=""></form>
       </section>
     </div>
   </main>
   <!-- Product card template -->
   <template id="flat-card">
     <li class="flats__item">
-      <a class="link flats__link" href="#">
+      <div class="flats__content">
         <div class="flats__text-block">
           <div class="flats__title-block">
-            <h2 class="title flats__title"></h2>
-            <svg class="flats__icon" width="21" height="18" viewBox="0 0 24 24" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M20.3951 5.58185C18.2552 3.47272 14.7727 3.47272 12.6329 5.58185L11.5 6.7398L10.3671 5.6232C8.22727 3.51407 4.74476 3.51407 2.6049 5.6232C0.465035 7.73234 0.465035 11.1648 2.6049 13.274L11.5 22L20.3951 13.2326C22.535 11.1235 22.535 7.69098 20.3951 5.58185Z" />
-            </svg>
+            <h2 class="clear--title flats__title"></h2>
+            <input class="visually-hidden favorite" type="checkbox" name="favorite" id="">
+            <label class="favorite__label" for="">
+              <svg class="favorite__icon" width="21" height="18" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3951 5.58185C18.2552 3.47272 14.7727 3.47272 12.6329 5.58185L11.5 6.7398L10.3671 5.6232C8.22727 3.51407 4.74476 3.51407 2.6049 5.6232C0.465035 7.73234 0.465035 11.1648 2.6049 13.274L11.5 22L20.3951 13.2326C22.535 11.1235 22.535 7.69098 20.3951 5.58185Z" />
+              </svg>
+            </label>
           </div>
-          <h3 class="title flats__subtitle"></h3>
+          <h3 class="clear--title flats__subtitle"></h3>
           <span class="text flats__quantity"></span>
           <span class="text flats__min-price"></span>
         </div>
-        <div class="flats__image-block">
-          <img class="img flats__img" width="246" height="192" src="" alt="Планировка квартиры">
+        <a class="clear--link card-button flats__button" href="#">Выбери свою</a>
+        <div class="flats__image-block swiper slider">
+          <ul class="clear--list  swiper-wrapper slider__list">
+            <li class="swiper-slide slider__item">
+              <img class="clear--img flats__img" width="246" height="192" src="" alt="Планировка квартиры">
+            </li>
+            <li class="swiper-slide">
+              <img class="clear--img flats__img" width="246" height="192" src="" alt="Планировка квартиры">
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
         </div>
-      </a>
+      </div>
     </li>
   </template>
-  <script src="js/main.bundle.js" defer></script>
 </body>
 
 </html>

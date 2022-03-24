@@ -5,10 +5,12 @@ const flatsList = document.querySelector('.flats__list');
 const renderCard = (flats) => {
   const cardFragment = document.createDocumentFragment();
 
-  flats.forEach((flat) => {
+  flats.forEach((flat, index) => {
     const flatItem = cardTemplate.cloneNode(true);
     flatItem.querySelector('.flats__title').textContent = flat.name;
     flatItem.querySelector('.flats__subtitle').textContent = flat.housingComplexName;
+    flatItem.querySelector('.favorite').id = `favorite-${index}`;
+    flatItem.querySelector('.favorite__label').htmlFor = `favorite-${index}`;
     flatItem.querySelector('.flats__quantity').textContent = `${flat.sameLayoutFlatCount} квартир`;
     flatItem.querySelector('.flats__min-price').textContent = `от ${flat.minPrice} млн ₽`;
     flatItem.querySelector('.flats__img').src = flat.planLink;

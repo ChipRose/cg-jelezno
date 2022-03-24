@@ -1,0 +1,31 @@
+.swiper{
+  width: 100%;
+  height: auto;
+}
+// Pagination
+
+.swiper .swiper-pagination {
+  height: 3px;
+  border: 2px solid red;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.swiper .swiper-pagination > .swiper-pagination-bullet {
+  width: 20px;
+  height: 1px;
+  border-radius: 0;
+  opacity: 1;
+  background-color: var(--cl-bg-slider-pagination);
+}
+
+.swiper-pagination > .swiper-pagination-bullet-active {
+  background-color: var( --cl-bg-slider-pagination-current);
+}
+
+.swiper .swiper-wrapper--image {
+  width: 280px;
+  outline: 1px solid green;
+}

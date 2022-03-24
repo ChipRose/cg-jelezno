@@ -64,5 +64,14 @@
     "photos": [],
     "sameLayoutFlatCount": 12,
     "minPrice": 2.5
+  },
+  {
+    "id": 7,
+    "name": "Апартаменты, 40м2",
+    "housingComplexName": "New",
+    "planLink": "../img/flat/flat-01.png",
+    "photos": [],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 5
   }
 ]

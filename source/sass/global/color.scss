@@ -1,8 +1,16 @@
 :root {
   --cl-bg-body-from: rgb(30, 44, 56);
   --cl-bg-body-to: rgb(27, 69, 105);
-  --cl-bg-container: rgb(255, 255, 255);
+  --cl-bg-container: rgb(245, 246, 247);
+  --cl-bg-card: rgb(255, 255, 255);
   --cl-shd-container: rgba(0, 19, 35, 0.4);
   --cl-txt-main-text: rgb(30, 52, 71);
   --cl-txt-title-hover: rgb(0, 96, 175);
+  --cl-brd-favorite: rgb(214, 220, 225);
+  --cl-fill-favorite-checked: rgba(197, 0, 0);
+  --cl-bg-card-button: rgb(183, 223, 255);
+  --cl-shd-card-hover: rgba(179, 189, 197, 0.3);
+  --cl-shd-card-button-hover: rgb(0, 96, 175);
+  --cl-bg-slider-pagination: rgb(214, 220, 225);
+  --cl-bg-slider-pagination-current: rgb(0, 96, 175);
 }
