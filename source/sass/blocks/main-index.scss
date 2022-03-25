@@ -1,0 +1,20 @@
+.main-index__container {
+  padding: 30px 27px;
+  margin: 0 auto;
+  width: var(--width-container);
+  height: 100%;
+  box-sizing:border-box;
+  display: grid;
+  grid-template-columns: $width-content auto;
+  grid-template-rows: min-content;
+}
+
+.main-index__content {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.main-index__filters {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}

@@ -20,7 +20,6 @@ function optimization() {
   if (isProd) {
     configObj = [
       new TerserWebpackPlugin({
-
       }),
       new ImageMinimizerPlugin({
         minimizer: {
@@ -50,6 +49,7 @@ const plugins = () => {
     new CopyPlugin({
       patterns: [
         { from: path.resolve(__dirname, 'source/fonts'), to: 'fonts' },
+        { from: path.resolve(__dirname, 'source/json'), to: 'json' },
         { from: path.resolve(__dirname, 'source/img'), to: 'img' },
       ],
     }),
@@ -107,10 +107,11 @@ module.exports = {
       },
       {
         //Styles
-        test: /\.css$/i,
+        test: /\.scss$/i,
         use: [
           { loader: MiniCssExtractPlugin.loader },
           { loader: 'css-loader', options: { sourceMap: true, url: false } },
+          { loader: 'sass-loader'},
         ],
       },
     ],

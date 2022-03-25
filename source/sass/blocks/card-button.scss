@@ -1,0 +1,15 @@
+.card-button {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: var(--fz-card-button);
+  line-height: var(--lh-card-button);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2%;
+  background-color: var(--cl-bg-card-button);
+  transition: box-shadow 0.3s ease-in;
+
+  &:hover {
+    box-shadow: 0 0 0 2px var(--cl-shd-card-button-hover);
+  }
+}

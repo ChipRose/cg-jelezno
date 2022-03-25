@@ -24,6 +24,7 @@
     "cross-env": "7.0.3",
     "css-loader": "6.7.1",
     "css-minimizer-webpack-plugin": "3.4.1",
+    "editorconfig-cli": "0.3.0",
     "eslint": "7.18.0",
     "eslint-config-htmlacademy": "2.0.0",
     "file-loader": "6.2.0",
@@ -38,17 +39,28 @@
     "mini-css-extract-plugin": "2.6.0",
     "normalize.css": "8.0.1",
     "optimize-css-assets-webpack-plugin": "4.0.0",
+    "sass": "1.49.9",
+    "sass-loader": "12.6.0",
+    "stylelint": "13.12.0",
+    "stylelint-config-htmlacademy": "0.1.4",
     "terser-webpack-plugin": "5.3.1",
     "webpack": "5.70.0",
     "webpack-cli": "4.9.2",
     "webpack-dev-server": "4.7.4"
   },
   "scripts": {
-    "test": "eslint \"source/**/*.js\"",
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\"",
+    "eslint": "eslint \"source/**/*.js\"",
+    "test": "npm run stylelint && npm run eslint",
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "start": "cross-env NODE_ENV=development webpack serve --mode development"
   },
   "engines": {
     "node": "12.0.0"
+  },
+  "dependencies": {
+    "nouislider": "15.5.1",
+    "swiper": "8.0.7"
   }
 }

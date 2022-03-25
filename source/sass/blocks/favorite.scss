@@ -1,0 +1,11 @@
+//Icon
+
+.favorite__icon {
+  stroke: var(--cl-brd-favorite);
+  stroke-width: 2px;
+}
+
+.favorite:checked + .favorite__label .favorite__icon {
+  stroke-width: 0;
+  fill: var(--cl-fill-favorite-checked);
+}

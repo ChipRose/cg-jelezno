@@ -1,0 +1,19 @@
+@import "~normalize.css";
+@import "./global/color.scss";
+@import "./global/variables.scss";
+@import "./global/font.scss";
+@import "./global/font-size.scss";
+@import "./global/clear.scss";
+@import "./global/visually-hidden.scss";
+/* Common Styles */
+@import "./blocks/page.scss";
+@import "./blocks/body.scss";
+@import "./blocks/container.scss";
+/* Main Index */
+@import "./blocks/main-index.scss";
+@import "./blocks/flats.scss";
+@import "./blocks/favorite.scss";
+@import "./blocks/card-button.scss";
+/* Slider */
+@import "./blocks/swiper.scss";
+@import "./blocks/slider.scss";
