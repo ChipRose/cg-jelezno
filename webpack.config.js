@@ -44,7 +44,7 @@ function optimization() {
 const plugins = () => {
   const basePlugins = [
     new MiniCssExtractPlugin({
-      filename: 'css/style.min.css'
+      filename: 'css/style.min.css',
     }),
     new CopyPlugin({
       patterns: [
@@ -56,6 +56,7 @@ const plugins = () => {
     new HTMLPlugin({
       template: path.resolve(__dirname, 'source/index.html'),
       filename: 'index.html',
+      inject: 'body',
     }),
   ];
 
@@ -66,7 +67,9 @@ module.exports = {
   context: path.resolve(__dirname, 'source'),
   mode: 'development',
 
-  entry: './js/main.js',
+  entry: {
+    main: './js/main.js',
+  },
   output: {
     filename: 'js/[name].bundle.js',
     path: path.resolve(__dirname, 'build'),
@@ -111,7 +114,7 @@ module.exports = {
         use: [
           { loader: MiniCssExtractPlugin.loader },
           { loader: 'css-loader', options: { sourceMap: true, url: false } },
-          { loader: 'sass-loader'},
+          { loader: 'sass-loader' },
         ],
       },
     ],

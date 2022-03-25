@@ -14,6 +14,13 @@
       <section class="flats main-index__content">
         <h1 class="clear--title flats__title"></h1>
         <ul class="clear--list flats__list"></ul>
+
+        <div class="ddd swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">1</div>
+            <div class="swiper-slide">2</div>
+          </div>
+        </div>
       </section>
       <section class="filters main-index__filters">
         <form action="#" autocomplete="off">
@@ -43,7 +50,15 @@
             <label class="rooms-quantity__label" for="rooms-4+">4...</label>
           </fieldset>
           <fielset class="plan-features">
-            <input class="visually-hidden plan-features__checkbox" type="checkbox" name="plans" value="more-toilets">
+            <legend class="plan-features__legend">
+              Особенности планировки
+            </legend>
+            <input class="visually-hidden plan-features__checkbox" type="checkbox" name="plans" value="more-toilets" id="more-toilets">
+            <label for="more-toilets" class="plan-features__label">2 и более санузла</label>
+            <input class="visually-hidden plan-features__checkbox" type="checkbox" name="plans" value="big-loggia" id="big-loggia">
+            <label for="big-loggia" class="plan-features__label">Большая лоджия</label>
+            <input class="visually-hidden plan-features__checkbox" type="checkbox" name="plans" value="wardrobe" id="wardrobe">
+            <label for="wardrobe" class="plan-features__label">Гардеробная</label>
           </fielset>
         </form>
       </section>
@@ -76,12 +91,13 @@
               <img class="clear--img flats__img" width="246" height="192" src="" alt="Планировка квартиры">
             </li>
             <li class="swiper-slide">
-              <img class="clear--img flats__img" width="246" height="192" src="" alt="Планировка квартиры">
+              <img class="clear--img flats__img" width="246" height="192" src="img/flat/flat-02.png" alt="Планировка квартиры">
             </li>
           </ul>
           <div class="swiper-pagination"></div>
         </div>
       </div>
+      
     </li>
   </template>
 </body>

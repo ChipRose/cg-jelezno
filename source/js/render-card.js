@@ -1,20 +1,10 @@
 import 'swiper/scss';
 import 'swiper/scss/pagination';
-
-import Swiper, { Pagination } from 'swiper';
-
-const sliderOptions = {
-  modules: [Pagination],
-
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  loop: true,
-};
+import { setSlider } from './image-slider';
 
 const cardTemplate = document.querySelector('#flat-card').content.querySelector('.flats__item');
 const flatsList = document.querySelector('.flats__list');
+
 
 
 const renderCard = (flats) => {
@@ -30,12 +20,15 @@ const renderCard = (flats) => {
     flatItem.querySelector('.flats__quantity').textContent = `${flat.sameLayoutFlatCount} квартир`;
     flatItem.querySelector('.flats__min-price').textContent = `от ${flat.minPrice} млн ₽`;
     flatItem.querySelector('.swiper').classList.add(`slider-${index}`);
-    new Swiper(`.slider-${index}`, sliderOptions);
     flatItem.querySelector('.flats__img').src = flat.planLink;
     cardFragment.appendChild(flatItem);
-    
   });
   flatsList.appendChild(cardFragment);
-}
+
+  const flatsItems = flatsList.querySelectorAll('.flats__item');
+  flatsItems.forEach((__, index) => {
+    setSlider(`slider-${index}`);
+  })
+};
 
 export { renderCard };
