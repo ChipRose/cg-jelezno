@@ -20,6 +20,7 @@ const renderCard = (flats) => {
     flatItem.querySelector('.flats__quantity').textContent = `${flat.sameLayoutFlatCount} квартир`;
     flatItem.querySelector('.flats__min-price').textContent = `от ${flat.minPrice} млн ₽`;
     flatItem.querySelector('.swiper').classList.add(`slider-${index}`);
+    flatItem.querySelector('.swiper-pagination').classList.add(`pagination-${index}`);
     flatItem.querySelector('.flats__img').src = flat.planLink;
     cardFragment.appendChild(flatItem);
   });
@@ -27,7 +28,7 @@ const renderCard = (flats) => {
 
   const flatsItems = flatsList.querySelectorAll('.flats__item');
   flatsItems.forEach((__, index) => {
-    setSlider(`slider-${index}`);
+    setSlider(`slider-${index}`, `pagination-${index}`);
   })
 };
 

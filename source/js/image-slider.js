@@ -1,14 +1,14 @@
-import Swiper from 'swiper';
+import Swiper, {Pagination} from 'swiper';
 
 
-const setSlider = (element) => {
+const setSlider = (element, pagination) => {
   const sliderOptions = {
-    // modules: [Pagination],
+    modules: [Pagination],
 
-    // pagination: {
-    //   el: '.swiper-pagination',
-    //   clickable: true,
-    // },
+    pagination: {
+      el: `.${pagination}`,
+      clickable: true,
+    },
     loop: true,
   };
   return new Swiper(`.${element}`, sliderOptions);
