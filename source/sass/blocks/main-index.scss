@@ -1,11 +1,10 @@
 .main-index__container {
-  padding: 30px 27px;
+  padding: 30px;
   margin: 0 auto;
-  width: var(--width-container);
+  width: calc($width-container - 60px);
   height: 100%;
-  box-sizing: border-box;
   display: grid;
-  grid-template-columns: $width-content auto;
+  grid-template-columns: $width-content 307px;
   grid-template-rows: min-content;
 }
 
