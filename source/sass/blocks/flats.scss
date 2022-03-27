@@ -10,7 +10,7 @@
   margin-right: 8px;
   margin-bottom: 17px;
   width: calc(100% / 3 - 24px);
-  min-height:342px;
+  min-height: 300px;
   box-sizing: border-box;
   border-radius: 4px;
   font-size: var(--fz-card-text);
@@ -19,6 +19,12 @@
   &:hover {
     position: relative;
     z-index: 10;
+  }
+}
+
+.flats__item:last-child {
+  &:hover {
+    min-height: 411px;
   }
 }
 
@@ -44,6 +50,10 @@
     display: block;
   }
 
+  &:hover .flats__text {
+    margin-bottom: 20px;
+  }
+
   &:hover .flats__title {
     color: var(--cl-txt-title-hover);
   }
@@ -52,7 +62,7 @@
 //Image block
 
 .flats__image-block {
-  margin-bottom: 31px;
+  margin-bottom: 3px;
   order: 1;
 }
 
@@ -86,6 +96,24 @@
   margin-bottom: 7px;
   font-size: inherit;
   line-height: inherit;
+}
+
+//Text
+
+.flats__quantity {
+  margin-right: 14px;
+  position: relative;
+  &::before {
+    content: "";
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    right: -9px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: var(--cl-txt-main-text);
+  }
 }
 
 //Button

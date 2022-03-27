@@ -3,7 +3,10 @@
     "id": 1,
     "name": "Студия, 27м2",
     "housingComplexName": "New",
-    "planLink": "../img/flat/flat-01.png",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
     "photos": [
       "../img/complex/defans.jpg",
       "../img/complex/moscow.jpg"
@@ -15,7 +18,9 @@
     "id": 2,
     "name": "1-к квартира, 25м2",
     "housingComplexName": "Ёлки-Park",
-    "planLink": "../img/flat/flat-01.png",
+    "planLink": [
+      "../img/flat/flat-01.png"
+    ],
     "photos": [],
     "sameLayoutFlatCount": 4,
     "minPrice": 2
@@ -24,7 +29,10 @@
     "id": 3,
     "name": "Студия, 30м2",
     "housingComplexName": "Железно на Володарского",
-    "planLink": "../img/flat/flat-01.png",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
     "photos": [
       "../img/complex/moscow.jpg"
     ],
@@ -35,7 +43,10 @@
     "id": 4,
     "name": "1-к квартира, 24м2",
     "housingComplexName": "New",
-    "planLink": "../img/flat/flat-01.png",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
     "photos": [
       "../img/complex/defans.jpg",
       "../img/complex/moscow.jpg",
@@ -48,7 +59,10 @@
     "id": 5,
     "name": "Студия, 28м2",
     "housingComplexName": "Железно на Володарского",
-    "planLink": "../img/flat/flat-01.png",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
     "photos": [
       "../img/complex/moscow.jpg",
       "../img/complex/architector.jpg"
@@ -60,7 +74,10 @@
     "id": 6,
     "name": "Студия, 30м2",
     "housingComplexName": "Ёлки-Park",
-    "planLink": "../img/flat/flat-01.png",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
     "photos": [],
     "sameLayoutFlatCount": 12,
     "minPrice": 2.5
@@ -69,7 +86,10 @@
     "id": 7,
     "name": "Апартаменты, 40м2",
     "housingComplexName": "New",
-    "planLink": "../img/flat/flat-01.png",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
     "photos": [],
     "sameLayoutFlatCount": 12,
     "minPrice": 5

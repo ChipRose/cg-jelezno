@@ -5,16 +5,17 @@
 // Pagination
 
 .swiper .swiper-pagination {
-  height: 10px;
-  border: 2px solid red;
-  z-index: 100;
-  width: 100%;
-  left: 0;
-  bottom: 0;
+  height: 28px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: auto;
 }
 
 .swiper .swiper-pagination > .swiper-pagination-bullet {
-  width: 20px;
+  width: 50px;
   height: 1px;
   border-radius: 0;
   opacity: 1;
@@ -22,11 +23,6 @@
   cursor: pointer;
 }
 
-.swiper-pagination > .swiper-pagination-bullet-active {
+.swiper .swiper-pagination > .swiper-pagination-bullet-active {
   background-color: var( --cl-bg-slider-pagination-current);
-}
-
-.swiper .swiper-wrapper--image {
-  width: 280px;
-  outline: 1px solid green;
 }
