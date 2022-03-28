@@ -1,22 +1,50 @@
+
 //Value block
 
-.range__value-block {
+.range__field-list {
+  margin-bottom: 8px;
   display: flex;
 }
 
-//Input
+//Item
+
+.range__item {
+  margin-right: 4px;
+  box-sizing: border-box;
+  width: calc(50% - 4px);
+  position: relative;
+
+  &:last-child,
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+//Field
 
 .range__field {
-  padding: 9px 8px;
+  padding-top: 9px;
+  padding-right: 8px;
+  padding-bottom: 9px;
+  padding-left: 26px;
+  width: 100%;
   box-sizing: border-box;
-  flex: 0 0 50%;
   border: 1px solid var(--cl-brd-filter-field);
   border-radius: 2px;
+}
+
+//Sratic placeholder 
+
+.range__placeholder {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
 }
 
 //Slider block
 
 .range__slider-block {
-  width: 283px;
+  width: 293px;
   height: 16px;
 }

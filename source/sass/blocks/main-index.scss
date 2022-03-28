@@ -1,9 +1,9 @@
 .main-index__container {
   margin: 0 auto;
-  width: calc($width-container - 60px);
+  width: calc($width-container);
   height: 100%;
   display: grid;
-  grid-template-columns: $width-content 307px;
+  grid-template-columns: $width-content 340px;
   grid-template-rows: min-content;
   justify-content: space-between;
   overflow: hidden;
