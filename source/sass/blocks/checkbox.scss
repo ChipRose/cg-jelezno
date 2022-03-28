@@ -1,9 +1,10 @@
 //Label
 
-.plan-features__label {
+.checkbox__label {
   padding-left: 22px;
   display: block;
   position: relative;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -14,7 +15,7 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    border: 1px solid var(--cl-brd-filter-checkbox);
+    border: 1px solid var(--cl-brd-filter-field);
     border-radius: 2px;
   }
 
@@ -25,7 +26,7 @@
     box-sizing: border-box;
     display: none;
     position: absolute;
-    top: 3px;
+    top: 4px;
     left: 2px;
     transform: rotate(-45deg);
     border-bottom: 2px solid var(--cl-brd-filter-check);
@@ -35,6 +36,6 @@
 
 //Input
 
-.plan-features__checkbox:checked + .plan-features__label::after {
+.checkbox__input:checked + .checkbox__label::after {
   display: block;
 }

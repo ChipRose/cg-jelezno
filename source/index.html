@@ -16,45 +16,161 @@
         <ul class="clear--list flats__list"></ul>
       </section>
       <section class="filters main-index__filters">
-        <form action="#" autocomplete="off">
-          <fieldset class="clear--fieldset rooms-quantity">
+        <h2 class="visually-hidden">Набор фильтров</h2>
+        <form class="flats-filters" action="#" autocomplete="off">
+          <fieldset class="clear--fieldset flats-filters__rooms button-check">
             <legend class="filters__legend">
               Количество комнат
             </legend>
-            <input class="visually-hidden rooms-quantity__checkbox" type="checkbox" name="rooms" value="0" id="rooms-0">
-            <label class="rooms-quantity__label" for="rooms-0">C</label>
-            <input class="visually-hidden rooms-quantity__checkbox" type="checkbox" name="rooms" value="1" id="rooms-1">
-            <label class="rooms-quantity__label" for="rooms-1">1</label>
-            <input class="visually-hidden rooms-quantity__checkbox" type="checkbox" name="rooms" value="1+"
-              id="rooms-1+">
-            <label class="rooms-quantity__label" for="rooms-1+">1+</label>
-            <input class="visually-hidden rooms-quantity__checkbox" type="checkbox" name="rooms" value="2" id="rooms-2">
-            <label class="rooms-quantity__label" for="rooms-2">2</label>
-            <input class="visually-hidden rooms-quantity__checkbox" type="checkbox" name="rooms" value="2+"
-              id="rooms-2+">
-            <label class="rooms-quantity__label" for="rooms-2+">2+</label>
-            <input class="visually-hidden rooms-quantity__checkbox" type="checkbox" name="rooms" value="3" id="rooms-3">
-            <label class="rooms-quantity__label" for="rooms-3">3</label>
-            <input class="visually-hidden rooms-quantity__checkbox" type="checkbox" name="rooms" value="3+"
-              id="rooms-3+">
-            <label class="rooms-quantity__label" for="rooms-3+">3+</label>
-            <input class="visually-hidden rooms-quantity__checkbox" type="checkbox" name="rooms" value="4+"
-              id="rooms-4+">
-            <label class="rooms-quantity__label" for="rooms-4+">4...</label>
+            <ul class="clear--list button-check__list">
+              <li class="button-check__item button-check__item--rooms">
+                <input class="visually-hidden button-check__input" type="checkbox" name="rooms" value="0" id="rooms-0">
+                <label class="button-check__label" for="rooms-0">C</label>
+              </li>
+              <li class="button-check__item button-check__item--rooms">
+                <input class="visually-hidden button-check__input" type="checkbox" name="rooms" value="1" id="rooms-1">
+                <label class="button-check__label" for="rooms-1">1</label>
+              </li>
+              <li class="button-check__item button-check__item--rooms">
+                <input class="visually-hidden button-check__input" type="checkbox" name="rooms" value="1+"
+                  id="rooms-1+">
+                <label class="button-check__label" for="rooms-1+">1+</label>
+              </li>
+              <li class="button-check__item button-check__item--rooms">
+                <input class="visually-hidden button-check__input" type="checkbox" name="rooms" value="2" id="rooms-2">
+                <label class="button-check__label" for="rooms-2">2</label>
+              </li>
+              <li class="button-check__item button-check__item--rooms">
+                <input class="visually-hidden button-check__input" type="checkbox" name="rooms" value="2+"
+                  id="rooms-2+">
+                <label class="button-check__label" for="rooms-2+">2+</label>
+              </li>
+              <li class="button-check__item button-check__item--rooms">
+                <input class="visually-hidden button-check__input" type="checkbox" name="rooms" value="3" id="rooms-3">
+                <label class="button-check__label" for="rooms-3">3</label>
+              </li>
+              <li class="button-check__item button-check__item--rooms">
+                <input class="visually-hidden button-check__input" type="checkbox" name="rooms" value="3+"
+                  id="rooms-3+">
+                <label class="button-check__label" for="rooms-3+">3+</label>
+              </li>
+              <li class="button-check__item button-check__item--rooms">
+                <input class="visually-hidden button-check__input" type="checkbox" name="rooms" value="4+"
+                  id="rooms-4+">
+                <label class="button-check__label" for="rooms-4+">4...</label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="clear--fieldset plan-features">
-            <legend class="plan-features__legend">
+          <fieldset class="clear--fieldset flats-filters__plans checkbox">
+            <legend class="checkbox__legend">
               Особенности планировки
             </legend>
-            <input class="visually-hidden plan-features__checkbox" type="checkbox" name="plans" value="more-toilets"
-              id="more-toilets">
-            <label for="more-toilets" class="plan-features__label">2 и более санузла</label>
-            <input class="visually-hidden plan-features__checkbox" type="checkbox" name="plans" value="big-loggia"
-              id="big-loggia">
-            <label for="big-loggia" class="plan-features__label">Большая лоджия</label>
-            <input class="visually-hidden plan-features__checkbox" type="checkbox" name="plans" value="wardrobe"
-              id="wardrobe">
-            <label for="wardrobe" class="plan-features__label">Гардеробная</label>
+            <ul class="clear--list checkbox__list">
+              <li class="checkbox__item">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="plans" value="more-toilets"
+                  id="more-toilets">
+                <label for="more-toilets" class="checkbox__label">2 и более санузла</label>
+              </li>
+              <li class="checkbox__item checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="plans" value="big-loggia"
+                  id="big-loggia">
+                <label for="big-loggia" class="checkbox__label">Большая лоджия</label>
+              </li>
+              <li class="checkbox__item checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="plans" value="wardrobe"
+                  id="wardrobe">
+                <label for="wardrobe" class="checkbox__label">Гардеробная</label>
+              </li>
+              <li class="checkbox__item checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="plans" value="kitchen-livingRoom"
+                  id="kitchen-livingRoom">
+                <label for="kitchen-livingRoom" class="checkbox__label">Кухня-гостиная</label>
+              </li>
+              <li class="checkbox__item checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="plans" value="loggia" id="loggia">
+                <label for="loggia" class=" checkbox__label">Лоджия</label>
+              </li>
+              <li class="checkbox__item checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="plans" value="laundry"
+                  id="laundry">
+                <label for="laundry" class="checkbox__label">Постирочная</label>
+              </li>
+            </ul>
+            <a class="clear--link" href="#">Показать все</a>
+          </fieldset>
+          <fieldset class="clear--fieldset flats-filters__project button-check">
+            <legend class="button-checkbox__legend">
+              Проект
+            </legend>
+            <a class="clear--link" href="#">Выбрать на карте</a>
+            <ul class="clear--list button-check__list">
+              <li class="button-check__item button-check__item--project">
+                <input class="visually-hidden button-check__input" type="checkbox" name="project" value="znak"
+                  id="znak">
+                <label for="znak" class="button-check__label button-check__label--project">
+                  <img src="img/icon/icon-znak.svg" width="16" height="16" alt="Логотип ZNAK">
+                  <span>ZNAK</span>
+                </label>
+              </li>
+              <li class="button-check__item button-check__item--project">
+                <input class="visually-hidden button-check__input" type="checkbox" name="project" value="lomonosov"
+                  id="lomonosov">
+                <label for="lomonosov" class="button-check__label button-check__label--project">
+                  <img src="img/icon/icon-lomonosov.svg" width="16" height="16" alt="Логотип На Ломоносова">
+                  <span>На Ломоносова</span>
+                </label>
+              </li>
+              <li class="button-check__item button-check__item--project">
+                <input class="visually-hidden button-check__input" type="checkbox" name="project" value="vasilki"
+                  id="vasilki">
+                <label for="vasilki" class="button-check__label button-check__label--project">
+                  <img src="img/icon/icon-vasilki.svg" width="16" height="16" alt="Логотип Васильки">
+                  <span>Васильки</span>
+                </label>
+              </li>
+              <li class="button-check__item button-check__item--project">
+                <input class="visually-hidden button-check__input" type="checkbox" name="project" value="kalinina"
+                  id="kalinina">
+                <label for="kalinina" class="button-check__label button-check__label--project">
+                  <img src="img/icon/icon-kalinina.svg" width="16" height="16" alt="Логотип На Калинина">
+                  <span>На Калинина</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fielset class="clear--fieldset flats-filters__house">
+            <legend>
+              Дом
+            </legend>
+            <a class="clear--link" href="#">Выбрать на карте</a>
+          </fielset>
+          <fieldset class="clear--fieldset flats-filters__price range">
+            <legend>
+              Стоимость, ₽
+            </legend>
+            <div class="range__value-block">
+              <input class="clear--input range__field range__field--from" type="number" placeholder="2354000"
+                min="2354000" max="3700000">
+              <input class="clear--input range__field range__field--to" type="number" placeholder="3700000" min="2354000"
+                max="3700000">
+            </div>
+            <div class="range__slider-block range-slider">
+              <div class="range-slider__container" id="price-range"></div>
+            </div>
+          </fieldset>
+          <fieldset class="clear--fieldset flats-filters__square range">
+            <legend>
+              Площадь, м <sup>2</sup>
+            </legend>
+            <div class="range__value-block">
+              <input class="clear--input range__field range__field--from" type="number" placeholder="26,8" min="26.8"
+                max="50">
+              <input class="clear--input range__field range__field--to" type="number" placeholder="50" min="26.8"
+                max="50">
+            </div>
+            <div class="range__slider-block range-slider">
+              <div class="range-slider__container" id="square-range"></div>
+            </div>
           </fieldset>
         </form>
       </section>
@@ -69,8 +185,8 @@
             <h2 class="clear--title flats__title"></h2>
             <input class="visually-hidden favorite" type="checkbox" name="favorite" id="">
             <label class="favorite__label" for="">
-              <svg class="favorite__icon" width="21" height="18" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+              <svg class="favorite__icon" width="21" height="18" viewBox="0 0 24 24" fill="none" role="img"
+                aria-label="Иконка добавить в Избранное" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M20.3951 5.58185C18.2552 3.47272 14.7727 3.47272 12.6329 5.58185L11.5 6.7398L10.3671 5.6232C8.22727 3.51407 4.74476 3.51407 2.6049 5.6232C0.465035 7.73234 0.465035 11.1648 2.6049 13.274L11.5 22L20.3951 13.2326C22.535 11.1235 22.535 7.69098 20.3951 5.58185Z" />
               </svg>

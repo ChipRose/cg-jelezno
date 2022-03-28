@@ -17,8 +17,8 @@ const renderCard = (flats) => {
 
     flatItem.querySelector('.flats__title').textContent = flat.name;
     flatItem.querySelector('.flats__subtitle').textContent = flat.housingComplexName;
-    flatItem.querySelector('.favorite').id = `favorite-${index}`;
-    flatItem.querySelector('.favorite__label').htmlFor = `favorite-${index}`;
+    flatItem.querySelector('.favorite').id = `favorite-${flat.id}`;
+    flatItem.querySelector('.favorite__label').htmlFor = `favorite-${flat.id}`;
     flatItem.querySelector('.flats__quantity').textContent = `${flat.sameLayoutFlatCount} квартир`;
     flatItem.querySelector('.flats__min-price').textContent = `от ${flat.minPrice} млн ₽`;
     flatItem.querySelector('.swiper').classList.add(`slider-${index}`);
