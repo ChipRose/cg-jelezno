@@ -1,19 +1,30 @@
 .main-index__container {
-  padding: 30px;
   margin: 0 auto;
   width: calc($width-container - 60px);
   height: 100%;
   display: grid;
   grid-template-columns: $width-content 307px;
   grid-template-rows: min-content;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
 .main-index__content {
+  padding-top: 30px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
   grid-row: 1/2;
   grid-column: 1/2;
 }
 
 .main-index__filters {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  box-sizing: border-box;
   grid-row: 1/2;
   grid-column: 2/3;
 }

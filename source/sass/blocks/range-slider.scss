@@ -1,0 +1,52 @@
+//Range slider block
+
+.range-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//Cursor
+
+.range-slider__container.noUi-horizontal .noUi-handle {
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 259px;
+  right: none;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 1px solid var(--cl-brd-noui);
+  background-color: var(--cl-bg-noui-handle);
+  box-shadow: 0 4px 10px var(--cl-shd-noui-handle);
+  transition: box-shadow 0.3s ease-in;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+
+  &:hover,
+  &:active {
+    box-shadow: 0 0 0 1px var(--cl-shd-filter-hover);
+  }
+}
+
+// Scale
+
+.range-slider__container.noUi-target {
+  padding: 0 8px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--cl-brd-noui);
+  border: none;
+  box-shadow: none;
+}
+
+// Connects
+
+.range-slider__container .noUi-base .noUi-connect {
+  background-color: var(--cl-bg-noui-fill);
+}

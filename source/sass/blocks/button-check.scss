@@ -1,0 +1,55 @@
+//List
+
+.button-check__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+//Item
+
+.button-check__item {
+  margin-right: 4px;
+  margin-bottom: 4px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.button-check__item--rooms {
+  flex: 0 0 33px;
+
+  &:nth-child(8n) {
+    margin-right: 0;
+  }
+}
+
+.button-check__item--project {
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+//Label
+
+.button-check__label {
+  padding: 7px 7px 9px;
+  min-width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--cl-brd-filter-field);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in;
+}
+
+.button-check__label--project {
+  padding-right: 14px;
+  padding-left: 14px;
+}
+
+.button-check__input:checked + .button-check__label {
+  box-shadow: 0 0 0 1px var(--cl-shd-filter-hover);
+}

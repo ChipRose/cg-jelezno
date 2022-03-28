@@ -1,0 +1,22 @@
+//Value block
+
+.range__value-block {
+  display: flex;
+}
+
+//Input
+
+.range__field {
+  padding: 9px 8px;
+  box-sizing: border-box;
+  flex: 0 0 50%;
+  border: 1px solid var(--cl-brd-filter-field);
+  border-radius: 2px;
+}
+
+//Slider block
+
+.range__slider-block {
+  width: 283px;
+  height: 16px;
+}

@@ -3,6 +3,7 @@
   --cl-bg-body-to: rgb(27, 69, 105);
   --cl-bg-container: rgb(245, 246, 247);
   --cl-bg-card: rgb(255, 255, 255);
+  --cl-bg-filter: rgb(255, 255, 255);
   --cl-shd-container: rgba(0, 19, 35, 0.4);
   --cl-txt-main-text: rgb(30, 52, 71);
   --cl-txt-title-hover: rgb(0, 96, 175);
@@ -13,6 +14,11 @@
   --cl-shd-card-button-hover: rgb(0, 96, 175);
   --cl-bg-slider-pagination: rgb(214, 220, 225);
   --cl-bg-slider-pagination-current: rgb(0, 96, 175);
-  --cl-brd-filter-checkbox: rgb(214, 220, 225);
+  --cl-brd-filter-field: rgb(214, 220, 225);
   --cl-brd-filter-check: rgb(0, 96, 175);
+  --cl-bg-noui-fill: rgb(30, 52, 71);
+  --cl-brd-noui: rgb(214, 220, 225);
+  --cl-bg-noui-handle: rgb(255, 255, 255);
+  --cl-shd-noui-handle: rgba(0, 19, 35, 0.1);
+  --cl-shd-filter-hover: rgb(0, 96, 175);
 }
