@@ -151,14 +151,14 @@
             <div class="range__value-block">
               <ul class="clear--list range__field-list">
                 <li class="range__item">
-                  <input class="clear--input range__field" type="number" placeholder="2354000" min="2354000"
-                    max="3700000">
+                  <input class="clear--input range__field" id="price-min" type="number" placeholder="2354000"
+                    min="2354000" max="3700000" step="5000">
                   <span class="range__placeholder">от</span>
                 </li>
                 <li class="range__item">
-                  <input class="clear--input range__field" type="number" placeholder="3700000" min="2354000"
-                    max="3700000">
-                    <span class="range__placeholder">до</span>
+                  <input class="clear--input range__field" id="price-max" type="number" placeholder="3700000"
+                    min="2354000" max="3700000" step="5000">
+                  <span class="range__placeholder">до</span>
                 </li>
               </ul>
             </div>
@@ -172,11 +172,13 @@
             </legend>
             <ul class="clear--list range__field-list">
               <li class="range__item">
-                <input class="clear--input range__field" type="number" placeholder="26,8" min="26.8" max="50">
+                <input class="clear--input range__field" id="square-min" type="number" placeholder="26,8" min="26.8"
+                  max="50" step="0.1">
                 <span class="range__placeholder">от</span>
               </li>
               <li class="range__item">
-                <input class="clear--input range__field" type="number" placeholder="50" min="26.8" max="50">
+                <input class="clear--input range__field" id="square-max" type="number" placeholder="50" min="26.8"
+                  max="50" step="0.1">
                 <span class="range__placeholder">до</span>
               </li>
             </ul>
@@ -198,36 +200,36 @@
                 </label>
               </li>
               <li class="button-check__item button-check__item--house-status">
-                <input class="visually-hidden button-check__input" type="checkbox" name="house-status" value="1quarter2021"
-                  id="1quarter2021">
+                <input class="visually-hidden button-check__input" type="checkbox" name="house-status"
+                  value="1quarter2021" id="1quarter2021">
                 <label for="1quarter2021" class="button-check__label button-check__label--house-status">
                   1кв.2021
                 </label>
               </li>
               <li class="button-check__item button-check__item--house-status">
-                <input class="visually-hidden button-check__input" type="checkbox" name="house-status" value="3quarter2021"
-                  id="3quarter2021">
+                <input class="visually-hidden button-check__input" type="checkbox" name="house-status"
+                  value="3quarter2021" id="3quarter2021">
                 <label for="3quarter2021" class="button-check__label button-check__label--house-status">
                   3кв.2021
                 </label>
               </li>
               <li class="button-check__item button-check__item--house-status">
-                <input class="visually-hidden button-check__input" type="checkbox" name="house-status" value="1quarter2022"
-                  id="1quarter2022">
+                <input class="visually-hidden button-check__input" type="checkbox" name="house-status"
+                  value="1quarter2022" id="1quarter2022">
                 <label for="1quarter2022" class="button-check__label button-check__label--house-status">
                   1кв.2022
                 </label>
               </li>
               <li class="button-check__item button-check__item--house-status">
-                <input class="visually-hidden button-check__input" type="checkbox" name="house-status" value="2quarter2022"
-                  id="2quarter2022">
+                <input class="visually-hidden button-check__input" type="checkbox" name="house-status"
+                  value="2quarter2022" id="2quarter2022">
                 <label for="2quarter2022" class="button-check__label button-check__label--house-status">
                   2кв.2022
                 </label>
               </li>
               <li class="button-check__item">
-                <input class="visually-hidden button-check__input button-check__input--house-status" type="checkbox" name="house-status" value="1quarter2023"
-                  id="1quarter2023">
+                <input class="visually-hidden button-check__input button-check__input--house-status" type="checkbox"
+                  name="house-status" value="1quarter2023" id="1quarter2023">
                 <label for="1quarter2023" class="button-check__label button-check__label--house-status">
                   1кв.2023
                 </label>
@@ -241,18 +243,15 @@
             </legend>
             <ul class="clear--list checkbox__list">
               <li class="checkbox__item">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="view" value="yard"
-                  id="yard">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="view" value="yard" id="yard">
                 <label for="yard" class="checkbox__label">Двор</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="view" value="town"
-                  id="town">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="view" value="town" id="town">
                 <label for="town" class="checkbox__label">Панорама города</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="view" value="sunset"
-                  id="sunset">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="view" value="sunset" id="sunset">
                 <label for="sunset" class="checkbox__label">Закат</label>
               </li>
               <li class="checkbox__item checkbox">
@@ -307,31 +306,33 @@
             </legend>
             <ul class="clear--list checkbox__list">
               <li class="checkbox__item">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="flat-advantages" value="neighboursless"
-                  id="neighboursless">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="flat-advantages"
+                  value="neighboursless" id="neighboursless">
                 <label for="neighboursless" class="checkbox__label">Мало соседей на этаже</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="flat-advantages" value="arc-windows"
-                  id="arc-windows">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="flat-advantages"
+                  value="arc-windows" id="arc-windows">
                 <label for="arc-windows" class="checkbox__label">Арочные окна</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="flat-advantages" value="window-in-bathroom"
-                  id="window-in-bathroom">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="flat-advantages"
+                  value="window-in-bathroom" id="window-in-bathroom">
                 <label for="window-in-bathroom" class="checkbox__label">Ванная с окном</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="flat-advantages" value="two-windows-in-livingRoom"
-                  id="two-windows-in-livingRoom">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="flat-advantages"
+                  value="two-windows-in-livingRoom" id="two-windows-in-livingRoom">
                 <label for="two-windows-in-livingRoom" class="checkbox__label">Гостинная с двумя окнами</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="flat-advantages" value="three-flats-per-floor" id="three-flats-per-floor">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="flat-advantages"
+                  value="three-flats-per-floor" id="three-flats-per-floor">
                 <label for="three-flats-per-floor" class="checkbox__label">До 3-х квартир на этаже</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="flat-advantages" value="window-in-kitchen" id="window-in-kitchen">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="flat-advantages"
+                  value="window-in-kitchen" id="window-in-kitchen">
                 <label for="window-in-kitchen" class="checkbox__label">Кухня с окном в рабочей зоне</label>
               </li>
             </ul>
@@ -343,31 +344,33 @@
             </legend>
             <ul class="clear--list checkbox__list">
               <li class="checkbox__item">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="house-advantages" value="bicycle-room"
-                  id="bicycle-room">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="house-advantages"
+                  value="bicycle-room" id="bicycle-room">
                 <label for="bicycle-room" class="checkbox__label">Велосипедная</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="house-advantages" value="buggy-room"
-                  id="buggy-room">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="house-advantages"
+                  value="buggy-room" id="buggy-room">
                 <label for="buggy-room" class="checkbox__label">Колясочная</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="house-advantages" value="pantry-room"
-                  id="pantry-room">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="house-advantages"
+                  value="pantry-room" id="pantry-room">
                 <label for="pantry-room" class="checkbox__label">Кладовые</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="house-advantages" value="carless-yard"
-                  id="carless-yard">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="house-advantages"
+                  value="carless-yard" id="carless-yard">
                 <label for="carless-yard" class="checkbox__label">Двор без машин</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="house-advantages" value="closed-yard" id="closed-yard">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="house-advantages"
+                  value="closed-yard" id="closed-yard">
                 <label for="closed-yard" class="checkbox__label">Закрытая территория</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="house-advantages" value="underground-parking" id="underground-parking">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="house-advantages"
+                  value="underground-parking" id="underground-parking">
                 <label for="underground-parking" class="checkbox__label">Подземный паркинг</label>
               </li>
             </ul>
@@ -384,8 +387,8 @@
                 <label for="school" class="checkbox__label">Школа</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="infrastructure" value="kindergarden"
-                  id="kindergarden">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="infrastructure"
+                  value="kindergarden" id="kindergarden">
                 <label for="kindergarden" class="checkbox__label">Детский сад</label>
               </li>
               <li class="checkbox__item checkbox">
@@ -399,11 +402,13 @@
                 <label for="shops" class="checkbox__label">Магазины</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="infrastructure" value="lanes" id="lanes">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="infrastructure" value="lanes"
+                  id="lanes">
                 <label for="lanes" class="checkbox__label">Велодорожки</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="infrastructure" value="sport-zone" id="sport-zone">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="infrastructure" value="sport-zone"
+                  id="sport-zone">
                 <label for="sport-zone" class="checkbox__label">Спортивные зоны</label>
               </li>
             </ul>
@@ -415,32 +420,34 @@
             </legend>
             <ul class="clear--list checkbox__list">
               <li class="checkbox__item">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="house-format" value="school"
-                  id="school">
-                <label for="school" class="checkbox__label">Малоэтажный</label>
+                <input class="visually-hidden checkbox__input" type="checkbox" name="house-format" value="low-rise"
+                  id="low-rise">
+                <label for="low-rise" class="checkbox__label">Малоэтажный</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="house-format" value="kindergarden"
-                  id="kindergarden">
-                <label for="kindergarden" class="checkbox__label">Среднеэтажный</label>
+                <input class="visually-hidden checkbox__input" type="checkbox" name="house-format" value="mid-rise"
+                  id="mid-rise">
+                <label for="mid-rise" class="checkbox__label">Среднеэтажный</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="house-format" value="yard-park"
-                  id="yard-park">
-                <label for="yard-park" class="checkbox__label">Клубный дом</label>
+                <input class="visually-hidden checkbox__input" type="checkbox" name="house-format" value="club-house"
+                  id="club-house">
+                <label for="club-house" class="checkbox__label">Клубный дом</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="house-format" value="shops"
-                  id="shops">
-                <label for="shops" class="checkbox__label">Таунхаус</label>
+                <input class="visually-hidden checkbox__input" type="checkbox" name="house-format" value="townhouse"
+                  id="townhouse">
+                <label for="townhouse" class="checkbox__label">Таунхаус</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="house-format" value="lanes" id="lanes">
-                <label for="lanes" class="checkbox__label">Квадрохаус</label>
+                <input class="visually-hidden checkbox__input" type="checkbox" name="house-format" value="quad-house"
+                  id="quad-house">
+                <label for="quad-house" class="checkbox__label">Квадрохаус</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="house-format" value="sport-zone" id="sport-zone">
-                <label for="sport-zone" class="checkbox__label">Лайнхаус</label>
+                <input class="visually-hidden checkbox__input" type="checkbox" name="house-format" value="lane-house"
+                  id="lane-house">
+                <label for="lane-house" class="checkbox__label">Лайнхаус</label>
               </li>
             </ul>
             <a class="clear--link" href="#">Показать все</a>

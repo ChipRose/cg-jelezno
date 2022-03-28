@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Студия, 27м2",
-    "housingComplexName": "New",
+    "housingComplexName": "ZNAK",
     "planLink": [
       "../img/flat/flat-01.png",
       "../img/flat/flat-02.png"
@@ -12,23 +12,25 @@
       "../img/complex/moscow.jpg"
     ],
     "sameLayoutFlatCount": 15,
-    "minPrice": 1.5
+    "minPrice": 2,
+    "roomsQuantity": 1
   },
   {
     "id": 2,
     "name": "1-к квартира, 25м2",
-    "housingComplexName": "Ёлки-Park",
+    "housingComplexName": "ZNAK",
     "planLink": [
       "../img/flat/flat-01.png"
     ],
     "photos": [],
     "sameLayoutFlatCount": 4,
-    "minPrice": 2
+    "minPrice": 2,
+    "roomsQuantity": 4
   },
   {
     "id": 3,
     "name": "Студия, 30м2",
-    "housingComplexName": "Железно на Володарского",
+    "housingComplexName": "На Ломоносова",
     "planLink": [
       "../img/flat/flat-01.png",
       "../img/flat/flat-02.png"
@@ -37,12 +39,115 @@
       "../img/complex/moscow.jpg"
     ],
     "sameLayoutFlatCount": 12,
-    "minPrice": 4.5
+    "minPrice": 3.7,
+    "roomsQuantity": 2
   },
   {
     "id": 4,
     "name": "1-к квартира, 24м2",
-    "housingComplexName": "New",
+    "housingComplexName": "ZNAK",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/defans.jpg",
+      "../img/complex/moscow.jpg",
+      "../img/complex/defans.jpg"
+    ],
+    "sameLayoutFlatCount": 20,
+    "minPrice": 3,
+    "roomsQuantity": 1
+  },
+  {
+    "id": 5,
+    "name": "Студия, 28м2",
+    "housingComplexName": "На Калинина",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/moscow.jpg",
+      "../img/complex/architector.jpg"
+    ],
+    "sameLayoutFlatCount": 5,
+    "minPrice": 2.7,
+    "roomsQuantity": 2
+  },
+  {
+    "id": 6,
+    "name": "Студия, 30м2",
+    "housingComplexName": "На Ломоносова",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 3,
+    "roomsQuantity": 10
+  },
+  {
+    "id": 7,
+    "name": "Апартаменты, 40м2",
+    "housingComplexName": "Васильки",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 3.2,
+    "roomsQuantity": 5
+  },
+  {
+    "id": 8,
+    "name": "Студия, 27м2",
+    "housingComplexName": "ZNAK",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/defans.jpg",
+      "../img/complex/moscow.jpg"
+    ],
+    "sameLayoutFlatCount": 15,
+    "minPrice": 2,
+    "roomsQuantity": 3
+  },
+  {
+    "id": 9,
+    "name": "1-к квартира, 25м2",
+    "housingComplexName": "ZNAK",
+    "planLink": [
+      "../img/flat/flat-01.png"
+    ],
+    "photos": [],
+    "sameLayoutFlatCount": 4,
+    "minPrice": 2,
+    "roomsQuantity": 2
+  },
+  {
+    "id": 10,
+    "name": "Студия, 30м2",
+    "housingComplexName": "На Ломоносова",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/moscow.jpg"
+    ],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 3.7,
+    "roomsQuantity": 3
+  },
+  {
+    "id": 11,
+    "name": "1-к квартира, 24м2",
+    "housingComplexName": "На Калинина",
     "planLink": [
       "../img/flat/flat-01.png",
       "../img/flat/flat-02.png"
@@ -56,9 +161,9 @@
     "minPrice": 3
   },
   {
-    "id": 5,
+    "id": 12,
     "name": "Студия, 28м2",
-    "housingComplexName": "Железно на Володарского",
+    "housingComplexName": "На Калинина",
     "planLink": [
       "../img/flat/flat-01.png",
       "../img/flat/flat-02.png"
@@ -71,9 +176,9 @@
     "minPrice": 1.7
   },
   {
-    "id": 6,
+    "id": 13,
     "name": "Студия, 30м2",
-    "housingComplexName": "Ёлки-Park",
+    "housingComplexName": "На Ломоносова",
     "planLink": [
       "../img/flat/flat-01.png",
       "../img/flat/flat-02.png"
@@ -83,15 +188,217 @@
     "minPrice": 2.5
   },
   {
-    "id": 7,
+    "id": 14,
     "name": "Апартаменты, 40м2",
-    "housingComplexName": "New",
+    "housingComplexName": "Васильки",
     "planLink": [
       "../img/flat/flat-01.png",
       "../img/flat/flat-02.png"
     ],
     "photos": [],
     "sameLayoutFlatCount": 12,
-    "minPrice": 5
+    "minPrice": 2.5,
+    "roomsQuantity": 1
+  },
+  {
+    "id": 15,
+    "name": "Студия, 27м2",
+    "housingComplexName": "ZNAK",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/defans.jpg",
+      "../img/complex/moscow.jpg"
+    ],
+    "sameLayoutFlatCount": 15,
+    "minPrice": 2,
+    "roomsQuantity": 1
+  },
+  {
+    "id": 16,
+    "name": "1-к квартира, 25м2",
+    "housingComplexName": "ZNAK",
+    "planLink": [
+      "../img/flat/flat-01.png"
+    ],
+    "photos": [],
+    "sameLayoutFlatCount": 4,
+    "minPrice": 2,
+    "roomsQuantity": 4
+  },
+  {
+    "id": 17,
+    "name": "Студия, 30м2",
+    "housingComplexName": "На Ломоносова",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/moscow.jpg"
+    ],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 3.7,
+    "roomsQuantity": 2
+  },
+  {
+    "id": 18,
+    "name": "1-к квартира, 24м2",
+    "housingComplexName": "ZNAK",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/defans.jpg",
+      "../img/complex/moscow.jpg",
+      "../img/complex/defans.jpg"
+    ],
+    "sameLayoutFlatCount": 20,
+    "minPrice": 3,
+    "roomsQuantity": 1
+  },
+  {
+    "id": 19,
+    "name": "Студия, 28м2",
+    "housingComplexName": "На Калинина",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/moscow.jpg",
+      "../img/complex/architector.jpg"
+    ],
+    "sameLayoutFlatCount": 5,
+    "minPrice": 2.7,
+    "roomsQuantity": 2
+  },
+  {
+    "id": 20,
+    "name": "Студия, 30м2",
+    "housingComplexName": "На Ломоносова",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 3,
+    "roomsQuantity": 10
+  },
+  {
+    "id": 21,
+    "name": "Апартаменты, 40м2",
+    "housingComplexName": "Васильки",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 3.2,
+    "roomsQuantity": 5
+  },
+  {
+    "id": 22,
+    "name": "Студия, 27м2",
+    "housingComplexName": "ZNAK",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/defans.jpg",
+      "../img/complex/moscow.jpg"
+    ],
+    "sameLayoutFlatCount": 15,
+    "minPrice": 2,
+    "roomsQuantity": 3
+  },
+  {
+    "id": 23,
+    "name": "1-к квартира, 25м2",
+    "housingComplexName": "ZNAK",
+    "planLink": [
+      "../img/flat/flat-01.png"
+    ],
+    "photos": [],
+    "sameLayoutFlatCount": 4,
+    "minPrice": 2,
+    "roomsQuantity": 2
+  },
+  {
+    "id": 24,
+    "name": "Студия, 30м2",
+    "housingComplexName": "На Ломоносова",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/moscow.jpg"
+    ],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 3.7,
+    "roomsQuantity": 3
+  },
+  {
+    "id": 25,
+    "name": "1-к квартира, 24м2",
+    "housingComplexName": "На Калинина",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/defans.jpg",
+      "../img/complex/moscow.jpg",
+      "../img/complex/defans.jpg"
+    ],
+    "sameLayoutFlatCount": 20,
+    "minPrice": 3
+  },
+  {
+    "id": 26,
+    "name": "Студия, 28м2",
+    "housingComplexName": "На Калинина",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/moscow.jpg",
+      "../img/complex/architector.jpg"
+    ],
+    "sameLayoutFlatCount": 5,
+    "minPrice": 1.7
+  },
+  {
+    "id": 27,
+    "name": "Студия, 30м2",
+    "housingComplexName": "На Ломоносова",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 2.5
+  },
+  {
+    "id": 28,
+    "name": "Апартаменты, 40м2",
+    "housingComplexName": "Васильки",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 2.5,
+    "roomsQuantity": 1
   }
 ]

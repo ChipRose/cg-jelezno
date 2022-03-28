@@ -1,14 +1,12 @@
 import data from './../json/data.json';
 
-const GET_LINK = 'https://23.javascript.pages.academy/keksobooking/data404';
+const TIMEOUT_DELAY = 300;
 
-const getData = (onSuccess, onError) => {
-  fetch(GET_LINK)
-    .then((response) => {
-      return response.ok ? response.json() : data;
-    })
-    .then((flats) => onSuccess(flats))
-    .catch(() => onError());
-};
+
+const getData = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve(data);
+  })
+}, TIMEOUT_DELAY);
 
 export { getData };

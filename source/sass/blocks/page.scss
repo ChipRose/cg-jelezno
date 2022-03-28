@@ -1,5 +1,5 @@
 .page {
-  width: 100%;
+  width: $width-page;
   min-width: calc(var(--width-container) + 80px);
   min-height: 100%;
   background: linear-gradient(232.72deg, var(--cl-bg-body-from) 3.98%, var(--cl-bg-body-to));
