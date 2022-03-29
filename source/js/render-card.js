@@ -5,10 +5,13 @@ import { setSlider } from './image-slider';
 import { filterData, setFilter } from './filter';
 
 const cardTemplate = document.querySelector('#flat-card').content.querySelector('.flats__item');
+const title = document.querySelector('.flats__title');
 const flatsList = document.querySelector('.flats__list');
 
 const renderCard = (flats) => {
+  let flatQuantity = 0;
   const cardFragment = document.createDocumentFragment();
+
   flats
     .slice()
     .filter(flat => filterData(flat))
@@ -35,16 +38,26 @@ const renderCard = (flats) => {
 
       cardFragment.appendChild(flatItem);
     });
+
   flatsList.innerHTML = '';
   flatsList.appendChild(cardFragment);
 
   const flatsItems = flatsList.querySelectorAll('.flats__item');
+
   flatsItems.forEach((flat, index) => {
     const sliderItems = flat.querySelectorAll('.slider__item');
     if (sliderItems.length > 1) {
       setSlider(`slider-${index}`, `pagination-${index}`);
     }
   })
+
+  for (let item of flatsItems) {
+    if (item) {
+      flatQuantity++;
+    }
+  };
+
+  title.textContent = `Найдено ${flatQuantity} планировок`;
 };
 
 
