@@ -2,16 +2,18 @@ import 'swiper/scss';
 import 'swiper/scss/pagination';
 
 import { setSlider } from './image-slider';
-import { filterData, setFilter } from './filter';
+import { filterProject, filterRooms, filterPrice } from './filter';
+
+const EXEPTION_FOR_TITLE = 'студия';
 
 const cardTemplate = document.querySelector('#flat-card').content.querySelector('.flats__item');
 const title = document.querySelector('.flats__title');
 const flatsList = document.querySelector('.flats__list');
 
 const createCardTitle = (flat) => {
-  const {name, roomsQuantity, square} = flat;
+  const { name, roomsQuantity, square } = flat;
   name[0].toUpperCase();
-  const cardTitle = (name==='студия') ?  `${name}, ${square} м` :`${roomsQuantity}-к ${name}, ${square} м`;
+  const cardTitle = (name === EXEPTION_FOR_TITLE ) ? `${name.replace(name[0], name[0].toUpperCase())}, ${square} м` : `${roomsQuantity}-к ${name}, ${square} м`;
   return cardTitle;
 }
 
@@ -21,7 +23,9 @@ const renderCard = (flats) => {
 
   flats
     .slice()
-    .filter(flat => filterData(flat))
+    .filter(flat => filterProject(flat))
+    .filter(flat => filterRooms(flat))
+    .filter(flat => filterPrice(flat))
     .forEach((flat, index) => {
       const flatItem = cardTemplate.cloneNode(true);
       const sliderList = flatItem.querySelector('.slider__list');

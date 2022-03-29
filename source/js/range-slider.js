@@ -72,8 +72,8 @@ const setRangeSliderDependencies = (field, slider) => {
 
   filter.addEventListener('input', (evt) => {
     evt.target.id === MIN_ID ? slider.set([minField.value, null]) : slider.set([null, maxField.value]);
-    checkValidity(minField.value, maxField.value, evt.target);
-    filter.reportValidity();
+    // checkValidity(minField.value, maxField.value, evt.target);
+    // filter.reportValidity();
   });
 };
 
