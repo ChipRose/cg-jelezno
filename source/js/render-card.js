@@ -8,6 +8,13 @@ const cardTemplate = document.querySelector('#flat-card').content.querySelector(
 const title = document.querySelector('.flats__title');
 const flatsList = document.querySelector('.flats__list');
 
+const createCardTitle = (flat) => {
+  const {name, roomsQuantity, square} = flat;
+  name[0].toUpperCase();
+  const cardTitle = (name==='студия') ?  `${name}, ${square} м` :`${roomsQuantity}-к ${name}, ${square} м`;
+  return cardTitle;
+}
+
 const renderCard = (flats) => {
   let flatQuantity = 0;
   const cardFragment = document.createDocumentFragment();
@@ -19,8 +26,7 @@ const renderCard = (flats) => {
       const flatItem = cardTemplate.cloneNode(true);
       const sliderList = flatItem.querySelector('.slider__list');
       const sliderItem = sliderList.querySelector('.slider__item');
-
-      flatItem.querySelector('.flats__title').textContent = flat.name;
+      flatItem.querySelector('.flats__title span').textContent = createCardTitle(flat);
       flatItem.querySelector('.flats__subtitle').textContent = flat.housingComplexName;
       flatItem.querySelector('.favorite').id = `favorite-${flat.id}`;
       flatItem.querySelector('.favorite__label').htmlFor = `favorite-${flat.id}`;

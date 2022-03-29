@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Студия, 27м2",
+    "name": "квартира",
     "housingComplexName": "ZNAK",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -13,11 +13,12 @@
     ],
     "sameLayoutFlatCount": 15,
     "minPrice": 2,
-    "roomsQuantity": 1
+    "roomsQuantity": 1,
+    "square": 29
   },
   {
     "id": 2,
-    "name": "1-к квартира, 25м2",
+    "name": "квартира",
     "housingComplexName": "ZNAK",
     "planLink": [
       "../img/flat/flat-01.png"
@@ -25,11 +26,12 @@
     "photos": [],
     "sameLayoutFlatCount": 4,
     "minPrice": 2,
-    "roomsQuantity": 4
+    "roomsQuantity": 4,
+    "square": 27
   },
   {
     "id": 3,
-    "name": "Студия, 30м2",
+    "name": "студия",
     "housingComplexName": "На Ломоносова",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -40,11 +42,12 @@
     ],
     "sameLayoutFlatCount": 12,
     "minPrice": 3.7,
-    "roomsQuantity": 2
+    "roomsQuantity": 1,
+    "square": 32
   },
   {
     "id": 4,
-    "name": "1-к квартира, 24м2",
+    "name": "квартира",
     "housingComplexName": "ZNAK",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -57,11 +60,12 @@
     ],
     "sameLayoutFlatCount": 20,
     "minPrice": 3,
-    "roomsQuantity": 1
+    "roomsQuantity": 1,
+    "square": 32
   },
   {
     "id": 5,
-    "name": "Студия, 28м2",
+    "name": "студия",
     "housingComplexName": "На Калинина",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -73,11 +77,12 @@
     ],
     "sameLayoutFlatCount": 5,
     "minPrice": 2.7,
-    "roomsQuantity": 2
+    "roomsQuantity": 1,
+    "square": 33
   },
   {
     "id": 6,
-    "name": "Студия, 30м2",
+    "name": "студия",
     "housingComplexName": "На Ломоносова",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -86,11 +91,12 @@
     "photos": [],
     "sameLayoutFlatCount": 12,
     "minPrice": 3,
-    "roomsQuantity": 10
+    "roomsQuantity": 1,
+    "square": 50
   },
   {
     "id": 7,
-    "name": "Апартаменты, 40м2",
+    "name": "квартира",
     "housingComplexName": "Васильки",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -99,11 +105,12 @@
     "photos": [],
     "sameLayoutFlatCount": 12,
     "minPrice": 3.2,
-    "roomsQuantity": 5
+    "roomsQuantity": 5,
+    "square": 50
   },
   {
     "id": 8,
-    "name": "Студия, 27м2",
+    "name": "студия",
     "housingComplexName": "ZNAK",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -115,11 +122,12 @@
     ],
     "sameLayoutFlatCount": 15,
     "minPrice": 2,
-    "roomsQuantity": 3
+    "roomsQuantity": 1,
+    "square": 46.9
   },
   {
     "id": 9,
-    "name": "1-к квартира, 25м2",
+    "name": "квартира",
     "housingComplexName": "ZNAK",
     "planLink": [
       "../img/flat/flat-01.png"
@@ -127,11 +135,12 @@
     "photos": [],
     "sameLayoutFlatCount": 4,
     "minPrice": 2,
-    "roomsQuantity": 2
+    "roomsQuantity": 2,
+    "square": 36
   },
   {
     "id": 10,
-    "name": "Студия, 30м2",
+    "name": "студия",
     "housingComplexName": "На Ломоносова",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -142,11 +151,12 @@
     ],
     "sameLayoutFlatCount": 12,
     "minPrice": 3.7,
-    "roomsQuantity": 3
+    "roomsQuantity": 1,
+    "square": 35.7
   },
   {
     "id": 11,
-    "name": "1-к квартира, 24м2",
+    "name": "квартира",
     "housingComplexName": "На Калинина",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -158,11 +168,13 @@
       "../img/complex/defans.jpg"
     ],
     "sameLayoutFlatCount": 20,
-    "minPrice": 3
+    "minPrice": 3,
+    "roomsQuantity": 2,
+    "square": 32
   },
   {
     "id": 12,
-    "name": "Студия, 28м2",
+    "name": "студия",
     "housingComplexName": "На Калинина",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -173,11 +185,13 @@
       "../img/complex/architector.jpg"
     ],
     "sameLayoutFlatCount": 5,
-    "minPrice": 1.7
+    "minPrice": 1.7,
+    "roomsQuantity": 1,
+    "square": 43.7
   },
   {
     "id": 13,
-    "name": "Студия, 30м2",
+    "name": "студия",
     "housingComplexName": "На Ломоносова",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -185,11 +199,13 @@
     ],
     "photos": [],
     "sameLayoutFlatCount": 12,
-    "minPrice": 2.5
+    "minPrice": 2.5,
+    "roomsQuantity": 1,
+    "square": 50
   },
   {
     "id": 14,
-    "name": "Апартаменты, 40м2",
+    "name": "квартира",
     "housingComplexName": "Васильки",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -198,11 +214,12 @@
     "photos": [],
     "sameLayoutFlatCount": 12,
     "minPrice": 2.5,
-    "roomsQuantity": 1
+    "roomsQuantity": 1,
+    "square": 43
   },
   {
     "id": 15,
-    "name": "Студия, 27м2",
+    "name": "студия",
     "housingComplexName": "ZNAK",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -214,11 +231,12 @@
     ],
     "sameLayoutFlatCount": 15,
     "minPrice": 2,
-    "roomsQuantity": 1
+    "roomsQuantity": 1,
+    "square": 47
   },
   {
     "id": 16,
-    "name": "1-к квартира, 25м2",
+    "name": "квартира",
     "housingComplexName": "ZNAK",
     "planLink": [
       "../img/flat/flat-01.png"
@@ -226,11 +244,12 @@
     "photos": [],
     "sameLayoutFlatCount": 4,
     "minPrice": 2,
-    "roomsQuantity": 4
+    "roomsQuantity": 4,
+    "square": 50
   },
   {
     "id": 17,
-    "name": "Студия, 30м2",
+    "name": "студия",
     "housingComplexName": "На Ломоносова",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -241,11 +260,12 @@
     ],
     "sameLayoutFlatCount": 12,
     "minPrice": 3.7,
-    "roomsQuantity": 2
+    "roomsQuantity": 1,
+    "square": 34.6
   },
   {
     "id": 18,
-    "name": "1-к квартира, 24м2",
+    "name": "квартира",
     "housingComplexName": "ZNAK",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -258,11 +278,12 @@
     ],
     "sameLayoutFlatCount": 20,
     "minPrice": 3,
-    "roomsQuantity": 1
+    "roomsQuantity": 1,
+    "square": 43
   },
   {
     "id": 19,
-    "name": "Студия, 28м2",
+    "name": "студия",
     "housingComplexName": "На Калинина",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -274,11 +295,12 @@
     ],
     "sameLayoutFlatCount": 5,
     "minPrice": 2.7,
-    "roomsQuantity": 2
+    "roomsQuantity": 1,
+    "square": 41.4
   },
   {
     "id": 20,
-    "name": "Студия, 30м2",
+    "name": "студия",
     "housingComplexName": "На Ломоносова",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -287,11 +309,12 @@
     "photos": [],
     "sameLayoutFlatCount": 12,
     "minPrice": 3,
-    "roomsQuantity": 10
+    "roomsQuantity": 1,
+    "square": 50
   },
   {
     "id": 21,
-    "name": "Апартаменты, 40м2",
+    "name": "квартира",
     "housingComplexName": "Васильки",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -300,11 +323,12 @@
     "photos": [],
     "sameLayoutFlatCount": 12,
     "minPrice": 3.2,
-    "roomsQuantity": 5
+    "roomsQuantity": 5,
+    "square": 50
   },
   {
     "id": 22,
-    "name": "Студия, 27м2",
+    "name": "студия",
     "housingComplexName": "ZNAK",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -316,11 +340,12 @@
     ],
     "sameLayoutFlatCount": 15,
     "minPrice": 2,
-    "roomsQuantity": 3
+    "roomsQuantity": 1,
+    "square": 43.2
   },
   {
     "id": 23,
-    "name": "1-к квартира, 25м2",
+    "name": "квартира",
     "housingComplexName": "ZNAK",
     "planLink": [
       "../img/flat/flat-01.png"
@@ -328,11 +353,12 @@
     "photos": [],
     "sameLayoutFlatCount": 4,
     "minPrice": 2,
-    "roomsQuantity": 2
+    "roomsQuantity": 2,
+    "square": 45.7
   },
   {
     "id": 24,
-    "name": "Студия, 30м2",
+    "name": "студия",
     "housingComplexName": "На Ломоносова",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -343,11 +369,12 @@
     ],
     "sameLayoutFlatCount": 12,
     "minPrice": 3.7,
-    "roomsQuantity": 3
+    "roomsQuantity": 1,
+    "square": 35
   },
   {
     "id": 25,
-    "name": "1-к квартира, 24м2",
+    "name": "квартира",
     "housingComplexName": "На Калинина",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -359,11 +386,13 @@
       "../img/complex/defans.jpg"
     ],
     "sameLayoutFlatCount": 20,
-    "minPrice": 3
+    "minPrice": 3.7,
+    "roomsQuantity": 5,
+    "square": 30.5
   },
   {
     "id": 26,
-    "name": "Студия, 28м2",
+    "name": "студия",
     "housingComplexName": "На Калинина",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -374,11 +403,13 @@
       "../img/complex/architector.jpg"
     ],
     "sameLayoutFlatCount": 5,
-    "minPrice": 1.7
+    "minPrice": 1.7,
+    "roomsQuantity": 1,
+    "square": 32
   },
   {
     "id": 27,
-    "name": "Студия, 30м2",
+    "name": "студия",
     "housingComplexName": "На Ломоносова",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -386,11 +417,13 @@
     ],
     "photos": [],
     "sameLayoutFlatCount": 12,
-    "minPrice": 2.5
+    "minPrice": 2.5,
+    "roomsQuantity": 1,
+    "square": 30
   },
   {
     "id": 28,
-    "name": "Апартаменты, 40м2",
+    "name": "квартира",
     "housingComplexName": "Васильки",
     "planLink": [
       "../img/flat/flat-01.png",
@@ -399,6 +432,7 @@
     "photos": [],
     "sameLayoutFlatCount": 12,
     "minPrice": 2.5,
-    "roomsQuantity": 1
+    "roomsQuantity": 1,
+    "square": 50
   }
 ]

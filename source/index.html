@@ -24,40 +24,40 @@
             </legend>
             <ul class="clear--list button-check__list">
               <li class="button-check__item button-check__item--rooms">
-                <input class="visually-hidden button-check__input" type="checkbox" name="rooms" value="0" id="rooms-0">
-                <label class="button-check__label" for="rooms-0">C</label>
+                <input class="visually-hidden button-check__input" type="radio" name="rooms" value="0" id="rooms0">
+                <label class="button-check__label" for="rooms0">C</label>
               </li>
               <li class="button-check__item button-check__item--rooms">
-                <input class="visually-hidden button-check__input" type="checkbox" name="rooms" value="1" id="rooms-1">
-                <label class="button-check__label" for="rooms-1">1</label>
+                <input class="visually-hidden button-check__input" type="radio" name="rooms" value="1" id="rooms1">
+                <label class="button-check__label" for="rooms1">1</label>
               </li>
               <li class="button-check__item button-check__item--rooms">
-                <input class="visually-hidden button-check__input" type="checkbox" name="rooms" value="1+"
-                  id="rooms-1+">
-                <label class="button-check__label" for="rooms-1+">1+</label>
+                <input class="visually-hidden button-check__input" type="radio" name="rooms" value="1more"
+                  id="rooms1more">
+                <label class="button-check__label" for="rooms1more">1+</label>
               </li>
               <li class="button-check__item button-check__item--rooms">
-                <input class="visually-hidden button-check__input" type="checkbox" name="rooms" value="2" id="rooms-2">
-                <label class="button-check__label" for="rooms-2">2</label>
+                <input class="visually-hidden button-check__input" type="radio" name="rooms" value="2" id="rooms2">
+                <label class="button-check__label" for="rooms2">2</label>
               </li>
               <li class="button-check__item button-check__item--rooms">
-                <input class="visually-hidden button-check__input" type="checkbox" name="rooms" value="2+"
-                  id="rooms-2+">
-                <label class="button-check__label" for="rooms-2+">2+</label>
+                <input class="visually-hidden button-check__input" type="radio" name="rooms" value="2more"
+                  id="rooms2more">
+                <label class="button-check__label" for="rooms2more">2+</label>
               </li>
               <li class="button-check__item button-check__item--rooms">
-                <input class="visually-hidden button-check__input" type="checkbox" name="rooms" value="3" id="rooms-3">
-                <label class="button-check__label" for="rooms-3">3</label>
+                <input class="visually-hidden button-check__input" type="radio" name="rooms" value="3" id="rooms3">
+                <label class="button-check__label" for="rooms3">3</label>
               </li>
               <li class="button-check__item button-check__item--rooms">
-                <input class="visually-hidden button-check__input" type="checkbox" name="rooms" value="3+"
-                  id="rooms-3+">
-                <label class="button-check__label" for="rooms-3+">3+</label>
+                <input class="visually-hidden button-check__input" type="radio" name="rooms" value="3more"
+                  id="rooms3more">
+                <label class="button-check__label" for="rooms3more">3+</label>
               </li>
               <li class="button-check__item button-check__item--rooms">
-                <input class="visually-hidden button-check__input" type="checkbox" name="rooms" value="4+"
-                  id="rooms-4+">
-                <label class="button-check__label" for="rooms-4+">4...</label>
+                <input class="visually-hidden button-check__input" type="radio" name="rooms" value="4more"
+                  id="rooms4more">
+                <label class="button-check__label" for="rooms4more">4...</label>
               </li>
             </ul>
           </fieldset>
@@ -67,14 +67,14 @@
             </legend>
             <ul class="clear--list checkbox__list">
               <li class="checkbox__item">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="plans" value="more-toilets"
-                  id="more-toilets">
-                <label for="more-toilets" class="checkbox__label">2 и более санузла</label>
+                <input class="visually-hidden checkbox__input" type="checkbox" name="plans" value="moreToilets"
+                  id="moreToilets">
+                <label for="moreToilets" class="checkbox__label">2 и более санузла</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="plans" value="big-loggia"
-                  id="big-loggia">
-                <label for="big-loggia" class="checkbox__label">Большая лоджия</label>
+                <input class="visually-hidden checkbox__input" type="checkbox" name="plans" value="bigLoggia"
+                  id="bigLoggia">
+                <label for="bigLoggia" class="checkbox__label">Большая лоджия</label>
               </li>
               <li class="checkbox__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="plans" value="wardrobe"
@@ -82,9 +82,9 @@
                 <label for="wardrobe" class="checkbox__label">Гардеробная</label>
               </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="plans" value="kitchen-livingRoom"
-                  id="kitchen-livingRoom">
-                <label for="kitchen-livingRoom" class="checkbox__label">Кухня-гостиная</label>
+                <input class="visually-hidden checkbox__input" type="checkbox" name="plans" value="kitchenLivingRoom"
+                  id="kitchenLivingRoom">
+                <label for="kitchenLivingRoom" class="checkbox__label">Кухня-гостиная</label>
               </li>
               <li class="checkbox__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="plans" value="loggia" id="loggia">
@@ -462,7 +462,9 @@
       <div class="flats__content">
         <div class="flats__text-block">
           <div class="flats__title-block">
-            <h2 class="clear--title flats__title"></h2>
+            <h2 class="clear--title flats__title">
+              <span></span><sup>2</sup>
+            </h2> 
             <input class="visually-hidden favorite" type="checkbox" name="favorite" id="">
             <label class="favorite__label" for="">
               <svg class="favorite__icon" width="21" height="18" viewBox="0 0 24 24" fill="none" role="img"

@@ -15,16 +15,30 @@ const filterData = (flat) => {
   let flag = true;
 
   const checkedProjects = projectFilter.querySelectorAll('input:checked');
+  const checkedRoom = document.querySelectorAll('input[name=rooms]');
+
+  for (let room of checkedRoom) {
+    if (room.checked) {
+      const isIntValue = (room.value.length === parseInt(room.value).toString().length) ? true : false;
+      if (isIntValue) {
+        return flag = (roomsQuantity === parseInt(room.value)) ? true : false;
+      } else {
+        return flag = (roomsQuantity >= parseInt(room.value)) ? true : false;
+      };
+    }
+  };
 
   for (let project of checkedProjects) {
-    if (housingComplexName === projectValues[project.value]){
+    if (housingComplexName === projectValues[project.value]) {
       return flag = true;
     } else {
       flag = false;
     }
   };
+
   return flag;
 };
+
 
 const setFilter = (cb) => {
   filter.addEventListener('change', () => {
