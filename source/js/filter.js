@@ -47,21 +47,23 @@ const filterRooms = (flat) => {
 const filterPrice = (flat) => {
   let flag = true;
 
-  const MILLION_COEFFICIENT = Math.pow(10, 6)
+  const MILLION_COEFFICIENT = Math.pow(10, 6);
+
   const minPrice = document.querySelector('input[name=priceMin]');
-  const maxPrice = document.querySelector('input[name=priceMax]');
+  
+  // const maxPrice = document.querySelector('input[name=priceMax]');
 
-  const flatPrice = flat.minPrice * MILLION_COEFFICIENT;
+  // const flatPrice = flat.minPrice * MILLION_COEFFICIENT;
 
-  console.log(flatPrice>minPrice.value);
+  // console.log(flatPrice>minPrice.value);
 
-  (flatPrice >= parseFloat(minPrice.value) && flatPrice <= parseFloat(maxPrice.value)) ? flag = true : flag = false;
+  // (flatPrice >= parseFloat(minPrice.value) && flatPrice <= parseFloat(maxPrice.value)) ? flag = true : flag = false;
 
   return flag;
 };
 
 const setFilter = (cb) => {
-  filter.addEventListener('change', () => {
+  filter.addEventListener('input', () => {  
     cb();
   })
 };

@@ -54,7 +54,7 @@ const setSlider = (sliderElement, min, max, step) => {
 const priceRangeSlider = setSlider(priceRange, LimitValue.PRICE.MIN, LimitValue.PRICE.MAX, LimitValue.PRICE.STEP);
 const squareRangeSlider = setSlider(squareRange, LimitValue.SQUARE.MIN, LimitValue.SQUARE.MAX, LimitValue.SQUARE.STEP);
 
-const setRangeSliderDependencies = (field, slider) => {
+const setRangeSliderDependencies = (field, sliderElement) => {
   const { MAIN_FIELD, MIN_FIELD, MAX_FIELD, MIN_ID, ACCURACY } = field;
 
   const filter = document.querySelector(MAIN_FIELD);
@@ -62,23 +62,23 @@ const setRangeSliderDependencies = (field, slider) => {
   const maxField = filter.querySelector(MAX_FIELD);
   const coefficient = Math.pow(10, ACCURACY);
 
-  minField.value = slider.get(true)[0];
-  maxField.value = slider.get(true)[1];
+  minField.value='';
+  //sliderElement.noUiSlider.set([minField.value, null]);
+  //sliderElement.noUiSlider.set([null, maxField.value]);
 
-  slider.on('slide', (values) => {
-    minField.value = parseInt(values[0] * coefficient) / coefficient;
-    maxField.value = parseInt(values[1] * coefficient) / coefficient;
+  sliderElement.noUiSlider.on('update', (values, handle) => {
+    handle === 0 ? minField.value = parseFloat(values[handle]) : maxField.value = parseFloat(values[handle]);
   });
 
   filter.addEventListener('input', (evt) => {
-    evt.target.id === MIN_ID ? slider.set([minField.value, null]) : slider.set([null, maxField.value]);
+    //evt.target.id === MIN_ID ? sliderElement.noUiSlider.set([minField.value, null]) :sliderElement.noUiSlider.set([null, maxField.value]);
     // checkValidity(minField.value, maxField.value, evt.target);
     // filter.reportValidity();
   });
 };
 
-setRangeSliderDependencies(FieldProperties.PRICE, priceRangeSlider);
+setRangeSliderDependencies(FieldProperties.PRICE, priceRange);
 
-setRangeSliderDependencies(FieldProperties.SQUARE, squareRangeSlider);
+setRangeSliderDependencies(FieldProperties.SQUARE, squareRange);
 
 export { priceRangeSlider, squareRangeSlider };

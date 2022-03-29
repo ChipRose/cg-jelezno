@@ -70,5 +70,4 @@ const renderCard = (flats) => {
   title.textContent = `Найдено ${flatQuantity} планировок`;
 };
 
-
 export { renderCard };
