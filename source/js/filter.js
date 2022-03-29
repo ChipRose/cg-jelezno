@@ -1,43 +1,36 @@
 import { priceRangeSlider, squareRangeSlider } from './range-slider.js';
 
-const FieldProperties = {
-  PRICE: {
-    MAIN_FIELD: '.flats-filters__price',
-    MIN_FIELD: '#price-min',
-    MAX_FIELD: '#price-max',
-    MIN_ID: 'price-min',
-    ACCURACY: 0,
-  },
-  SQUARE: {
-    MAIN_FIELD: '.flats-filters__square',
-    MIN_FIELD: '#square-min',
-    MAX_FIELD: '#square-max',
-    MIN_ID: 'square-min',
-    ACCURACY: 1,
-  },
+const projectValues = {
+  znak: 'ZNAK',
+  lomonosov: 'На Ломоносова',
+  vasilki: 'Васильки',
+  kalinina: 'На Калинина',
 };
 
-const setRangeSliderDependencies = (field, slider) => {
-  const { MAIN_FIELD, MIN_FIELD, MAX_FIELD, MIN_ID, ACCURACY } = field;
+const filter = document.querySelector('.flats-filters');
+const projectFilter = filter.querySelector('.flats-filters__project');
 
-  const filter = document.querySelector(MAIN_FIELD);
-  const minField = filter.querySelector(MIN_FIELD);
-  const maxField = filter.querySelector(MAX_FIELD);
+const filterData = (flat) => {
+  const { housingComplexName, minPrice, roomsQuantity } = flat;
+  let flag = true;
 
-  minField.value = slider.get(true)[0];
-  maxField.value = slider.get(true)[1];
+  const checkedProjects = projectFilter.querySelectorAll('input:checked');
 
-  slider.on('slide', (values) => {
-    minField.value = Number(values[0]).toFixed(ACCURACY);
-    maxField.value = Number(values[1]).toFixed(ACCURACY);
-  });
-
-  filter.addEventListener('input', (evt) => {
-    evt.target.id === MIN_ID ? slider.set([minField.value, null]) : slider.set([null, maxField.value]);
-  });
+  for (let project of checkedProjects) {
+    if (housingComplexName === projectValues[project.value]){
+      return flag = true;
+    } else {
+      flag = false;
+    }
+  };
+  return flag;
 };
 
-setRangeSliderDependencies(FieldProperties.PRICE, priceRangeSlider );
+const setFilter = (cb) => {
+  filter.addEventListener('change', () => {
+    cb();
+  })
+};
 
-setRangeSliderDependencies(FieldProperties.SQUARE, squareRangeSlider );
+export { setFilter, filterData };
 
