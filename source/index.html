@@ -144,20 +144,20 @@
             </legend>
             <a class="clear--link" href="#">Выбрать на карте</a>
           </fieldset>
-          <fieldset class="clear--fieldset flats-filters__price range">
+          <fieldset class="clear--fieldset flats-filters__price range" tabindex="1">
             <legend>
               Стоимость, ₽
             </legend>
             <div class="range__value-block">
               <ul class="clear--list range__field-list">
                 <li class="range__item">
-                  <input class="clear--input range__field" id="price-min" type="number" name="priceMin" placeholder="2354000" 
-                    min="2354000" max="3700000">
+                  <input class="clear--input range__field" id="price-min" type="number" name="priceMin"
+                    placeholder="2354000" value="2354000" min="2354000" max="3700000">
                   <span class="range__placeholder">от</span>
                 </li>
                 <li class="range__item">
-                  <input class="clear--input range__field" id="price-max" type="number" name = "priceMax" placeholder="3700000" 
-                    min="2354000" max="3700000">
+                  <input class="clear--input range__field" id="price-max" type="number" name="priceMax"
+                    placeholder="3700000" value="3700000" min="2354000" max="3700000">
                   <span class="range__placeholder">до</span>
                 </li>
               </ul>
@@ -172,13 +172,13 @@
             </legend>
             <ul class="clear--list range__field-list">
               <li class="range__item">
-                <input class="clear--input range__field" id="square-min" type="number" placeholder="26,8" min="26.8"
-                  max="50" step="0.1">
+                <input class="clear--input range__field" id="square-min" type="number" name="squareMin"
+                  placeholder="26,8" min="26.8" max="50" step="0.1">
                 <span class="range__placeholder">от</span>
               </li>
               <li class="range__item">
-                <input class="clear--input range__field" id="square-max" type="number" placeholder="50" min="26.8"
-                  max="50" step="0.1">
+                <input class="clear--input range__field" id="square-max" type="number" name="squareMax" placeholder="50"
+                  min="26.8" max="50" step="0.1">
                 <span class="range__placeholder">до</span>
               </li>
             </ul>
@@ -464,7 +464,7 @@
           <div class="flats__title-block">
             <h2 class="clear--title flats__title">
               <span></span><sup>2</sup>
-            </h2> 
+            </h2>
             <input class="visually-hidden favorite" type="checkbox" name="favorite" id="">
             <label class="favorite__label" for="">
               <svg class="favorite__icon" width="21" height="18" viewBox="0 0 24 24" fill="none" role="img"

@@ -20,14 +20,12 @@ const FieldProperties = {
     MAIN_FIELD: '.flats-filters__price',
     MIN_FIELD: '#price-min',
     MAX_FIELD: '#price-max',
-    MIN_ID: 'price-min',
     ACCURACY: 0,
   },
   SQUARE: {
     MAIN_FIELD: '.flats-filters__square',
     MIN_FIELD: '#square-min',
     MAX_FIELD: '#square-max',
-    MIN_ID: 'square-min',
     ACCURACY: 1,
   },
 };
@@ -35,6 +33,11 @@ const FieldProperties = {
 const flatsFilters = document.querySelector('.flats-filters');
 const priceRange = flatsFilters.querySelector('#price-range');
 const squareRange = flatsFilters.querySelector('#square-range');
+
+const minPrice = flatsFilters.querySelector('#price-min');
+const maxPrice = flatsFilters.querySelector('#price-max');
+const minSquare = flatsFilters.querySelector('#square-min');
+const maxSquare = flatsFilters.querySelector('#square-max');
 
 const setSlider = (sliderElement, min, max, step) => {
   sliderElement.innerHTML = '';
@@ -51,34 +54,52 @@ const setSlider = (sliderElement, min, max, step) => {
   return noUiSlider.create(sliderElement, sliderOptions);
 };
 
-const priceRangeSlider = setSlider(priceRange, LimitValue.PRICE.MIN, LimitValue.PRICE.MAX, LimitValue.PRICE.STEP);
-const squareRangeSlider = setSlider(squareRange, LimitValue.SQUARE.MIN, LimitValue.SQUARE.MAX, LimitValue.SQUARE.STEP);
+setSlider(priceRange, LimitValue.PRICE.MIN, LimitValue.PRICE.MAX, LimitValue.PRICE.STEP);
+setSlider(squareRange, LimitValue.SQUARE.MIN, LimitValue.SQUARE.MAX,  LimitValue.SQUARE.STEP);
 
-const setRangeSliderDependencies = (field, sliderElement) => {
-  const { MAIN_FIELD, MIN_FIELD, MAX_FIELD, MIN_ID, ACCURACY } = field;
+const setSliderDependencies = (field, sliderElement, limit) => {
+  const { MAIN_FIELD, MIN_FIELD, MAX_FIELD, ACCURACY } = field;
+  const {MIN, MAX} = limit;
 
-  const filter = document.querySelector(MAIN_FIELD);
-  const minField = filter.querySelector(MIN_FIELD);
-  const maxField = filter.querySelector(MAX_FIELD);
-  const coefficient = Math.pow(10, ACCURACY);
+  const mainField = document.querySelector(MAIN_FIELD);
+  const minField = document.querySelector(MIN_FIELD);
+  const maxField = document.querySelector(MAX_FIELD);
 
-  minField.value='';
-  //sliderElement.noUiSlider.set([minField.value, null]);
-  //sliderElement.noUiSlider.set([null, maxField.value]);
+  sliderElement.noUiSlider.set([MIN, MAX]);
 
   sliderElement.noUiSlider.on('update', (values, handle) => {
-    handle === 0 ? minField.value = parseFloat(values[handle]) : maxField.value = parseFloat(values[handle]);
+    if (handle === 0) {
+      minField.focus();
+      minField.value = parseFloat(values[handle]).toFixed(ACCURACY);
+      minField.blur();
+    } else {
+      maxField.focus();
+      maxField.value = parseFloat(values[handle]).toFixed(ACCURACY);
+      maxField.blur();
+    }
   });
 
-  filter.addEventListener('input', (evt) => {
-    //evt.target.id === MIN_ID ? sliderElement.noUiSlider.set([minField.value, null]) :sliderElement.noUiSlider.set([null, maxField.value]);
-    // checkValidity(minField.value, maxField.value, evt.target);
-    // filter.reportValidity();
+  mainField.addEventListener('change', (evt) => {
+    evt.target.id === minField.id ? sliderElement.noUiSlider.set([evt.target.value, null]) : sliderElement.noUiSlider.set([null, evt.target.value]);
   });
 };
 
-setRangeSliderDependencies(FieldProperties.PRICE, priceRange);
+setSliderDependencies(FieldProperties.PRICE, priceRange, LimitValue.PRICE);
+setSliderDependencies(FieldProperties.SQUARE, squareRange, LimitValue.SQUARE);
 
-setRangeSliderDependencies(FieldProperties.SQUARE, squareRange);
+const setRangeListeners = (cb) =>{
+  minPrice.addEventListener('blur', () => {
+    cb();
+  });
+  maxPrice.addEventListener('blur', () => {
+    cb();
+  });
+  minSquare.addEventListener('blur', () => {
+    cb();
+  });
+  maxSquare.addEventListener('blur', () => {
+    cb();
+  });
+};
 
-export { priceRangeSlider, squareRangeSlider };
+export { setRangeListeners };

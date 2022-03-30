@@ -2,7 +2,7 @@ import 'swiper/scss';
 import 'swiper/scss/pagination';
 
 import { setSlider } from './image-slider';
-import { filterProject, filterRooms, filterPrice } from './filter';
+import { filterProject, filterRooms, filterPrice, filterSquare } from './filter';
 
 const EXEPTION_FOR_TITLE = 'студия';
 
@@ -26,6 +26,7 @@ const renderCard = (flats) => {
     .filter(flat => filterProject(flat))
     .filter(flat => filterRooms(flat))
     .filter(flat => filterPrice(flat))
+    .filter(flat => filterSquare(flat))
     .forEach((flat, index) => {
       const flatItem = cardTemplate.cloneNode(true);
       const sliderList = flatItem.querySelector('.slider__list');
@@ -65,7 +66,7 @@ const renderCard = (flats) => {
     if (item) {
       flatQuantity++;
     }
-  };
+  }
 
   title.textContent = `Найдено ${flatQuantity} планировок`;
 };

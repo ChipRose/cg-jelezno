@@ -1,5 +1,3 @@
-import { priceRangeSlider, squareRangeSlider } from './range-slider.js';
-
 const projectValues = {
   znak: 'ZNAK',
   lomonosov: 'На Ломоносова',
@@ -20,7 +18,7 @@ const filterProject = (flat) => {
     } else {
       flag = false;
     }
-  };
+  }
 
   return flag;
 };
@@ -37,9 +35,9 @@ const filterRooms = (flat) => {
         return flag = (flat.roomsQuantity === parseInt(room.value)) ? true : false;
       } else {
         return flag = (flat.roomsQuantity >= parseInt(room.value)) ? true : false;
-      };
+      }
     }
-  };
+  }
 
   return flag;
 };
@@ -50,23 +48,30 @@ const filterPrice = (flat) => {
   const MILLION_COEFFICIENT = Math.pow(10, 6);
 
   const minPrice = document.querySelector('input[name=priceMin]');
-  
-  // const maxPrice = document.querySelector('input[name=priceMax]');
+  const maxPrice = document.querySelector('input[name=priceMax]');
 
-  // const flatPrice = flat.minPrice * MILLION_COEFFICIENT;
+  const flatPrice = flat.minPrice * MILLION_COEFFICIENT;
 
-  // console.log(flatPrice>minPrice.value);
+  (flatPrice >= parseFloat(minPrice.value) && flatPrice <= parseFloat(maxPrice.value)) ? flag = true : flag = false;
 
-  // (flatPrice >= parseFloat(minPrice.value) && flatPrice <= parseFloat(maxPrice.value)) ? flag = true : flag = false;
+  return flag;
+};
+
+const filterSquare = (flat) => {
+  let flag = true;
+
+  const minSquare = document.querySelector('input[name=squareMin]');
+  const maxSquare = document.querySelector('input[name=squareMax]');
+
+  (flat.square >= parseFloat(minSquare.value) && flat.square <= parseFloat(maxSquare.value)) ? flag = true : flag = false;
 
   return flag;
 };
 
 const setFilter = (cb) => {
-  filter.addEventListener('input', () => {  
+  filter.addEventListener('input', () => {
     cb();
   })
 };
 
-export { setFilter, filterProject, filterRooms, filterPrice };
-
+export { setFilter, filterProject, filterRooms, filterPrice, filterSquare };
