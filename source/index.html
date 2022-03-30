@@ -19,7 +19,7 @@
         <h2 class="visually-hidden">Набор фильтров</h2>
         <form class="flats-filters" action="#" autocomplete="off">
           <fieldset class="clear--fieldset flats-filters__rooms button-check">
-            <legend class="filters__legend">
+            <legend class="filter-legend flats-filters__legend">
               Количество комнат
             </legend>
             <ul class="clear--list button-check__list">
@@ -62,10 +62,10 @@
             </ul>
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__plans checkbox">
-            <legend class="checkbox__legend">
+            <legend class="filter-legend flats-filters__legend">
               Особенности планировки
             </legend>
-            <ul class="clear--list checkbox__list">
+            <ul class="clear--list checkbox__list checkbox__list--plan">
               <li class="checkbox__item">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="plans" value="moreToilets"
                   id="moreToilets">
@@ -96,10 +96,10 @@
                 <label for="laundry" class="checkbox__label">Постирочная</label>
               </li>
             </ul>
-            <a class="clear--link" href="#">Показать все</a>
+            <a class="clear--link checkbox__all-link" href="#">Показать все</a>
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__project button-check">
-            <legend class="button-checkbox__legend">
+            <legend class="filter-legend flats-filters__legend">
               Проект
             </legend>
             <a class="clear--link" href="#">Выбрать на карте</a>
@@ -139,13 +139,13 @@
             </ul>
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__house">
-            <legend>
+            <legend class="filter-legend flats-filters__legend">
               Дом
             </legend>
             <a class="clear--link" href="#">Выбрать на карте</a>
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__price range" tabindex="1">
-            <legend>
+            <legend class="filter-legend flats-filters__legend">
               Стоимость, ₽
             </legend>
             <div class="range__value-block">
@@ -167,7 +167,7 @@
             </div>
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__square range">
-            <legend>
+            <legend class="filter-legend flats-filters__legend">
               Площадь, м <sup>2</sup>
             </legend>
             <ul class="clear--list range__field-list">
@@ -187,7 +187,7 @@
             </div>
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__house-status button-check">
-            <legend class="button-checkbox__legend">
+            <legend class="filter-legend flats-filters__legend">
               Проект
             </legend>
             <a class="clear--link" href="#">Выбрать на карте</a>
@@ -238,7 +238,7 @@
             </ul>
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__view checkbox">
-            <legend class="checkbox__legend">
+            <legend class="filter-legend flats-filters__legend">
               Вид из окна
             </legend>
             <ul class="clear--list checkbox__list">
@@ -263,9 +263,10 @@
                 <input class="visually-hidden checkbox__input" type="checkbox" name="view" value="sunrise" id="sunrise">
                 <label for="sunrise" class="checkbox__label">Рассвет</label>
               </li>
+            </ul>
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__ceiling-hight button-check">
-            <legend class="button-checkbox__legend">
+            <legend class="class=" filter-legend flats-filters__legend"">
               Проект
             </legend>
             <a class="clear--link" href="#">Высота потолков</a>
@@ -301,10 +302,10 @@
             </ul>
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__flat-advantages checkbox">
-            <legend class="checkbox__legend">
+            <legend class="filter-legend flats-filters__legend">
               Преимущества квартиры
             </legend>
-            <ul class="clear--list checkbox__list">
+            <ul class="clear--list checkbox__list checkbox__list--flat-advantages">
               <li class="checkbox__item">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="flat-advantages"
                   value="neighboursless" id="neighboursless">
@@ -336,10 +337,10 @@
                 <label for="window-in-kitchen" class="checkbox__label">Кухня с окном в рабочей зоне</label>
               </li>
             </ul>
-            <a class="clear--link" href="#">Показать все</a>
+            <a class="clear--link checkbox__all-link" href="#">Показать все</a>
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__house-advantages checkbox">
-            <legend class="checkbox__legend">
+            <legend class="filter-legend flats-filters__legend">
               Преимущества дома
             </legend>
             <ul class="clear--list checkbox__list">
@@ -377,7 +378,7 @@
             <a class="clear--link" href="#">Показать все</a>
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__infrastructure checkbox">
-            <legend class="checkbox__legend">
+            <legend class="filter-legend flats-filters__legend">
               Инфраструктура
             </legend>
             <ul class="clear--list checkbox__list">
@@ -415,7 +416,7 @@
             <a class="clear--link" href="#">Показать все</a>
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__house-format checkbox">
-            <legend class="checkbox__legend">
+            <legend class="filter-legend flats-filters__legend">
               Формат дома
             </legend>
             <ul class="clear--list checkbox__list">

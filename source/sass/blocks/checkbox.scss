@@ -34,8 +34,57 @@
   }
 }
 
+//List
+
+.checkbox__list--plan {
+  margin-bottom: 4px;
+}
+
+.checkbox__list--flat-advantages {
+  margin-bottom: 4px;
+}
+
+//Item
+
+.checkbox__item {
+  margin-bottom: 4px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    color: var(--cl-txt-filter-hover);
+  }
+
+  &:hover .checkbox__label::before {
+    background-color: var(--cl-bg-filter-checkbox-hover);
+    border: none;
+  }
+}
+
 //Input
 
 .checkbox__input:checked + .checkbox__label::after {
   display: block;
+}
+
+//Link 
+
+.checkbox__all-link {
+  padding: 5px 12px 5px 1px;
+  position: relative;
+  color: var(--cl-txt-filter-link);
+
+  &::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 7px;
+    right: -4px;
+    border-left: 1px solid var(--cl-txt-filter-link);
+    border-bottom: 1px solid var(--cl-txt-filter-link);
+    transform: rotate(-45deg) ;
+  }
 }

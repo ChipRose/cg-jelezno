@@ -1,0 +1,27 @@
+.flats-filters {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  font-size: var(--fz-filter-item);
+  line-height: var(--lh-filter-item);
+  background-color: var(--cl-bg-filter);
+}
+
+//Legend
+
+.flats-filters__legend {
+  margin-bottom: 8px;
+}
+
+//Rooms
+
+.flats-filters__rooms {
+  margin-bottom: 25px;
+}
+
+//Plans
+
+.flats-filters__plans {
+  margin-bottom: 25px;
+}
