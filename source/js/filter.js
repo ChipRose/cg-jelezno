@@ -5,6 +5,15 @@ const projectValues = {
   kalinina: 'На Калинина',
 };
 
+const planValues = {
+  moreToilets: '2 и более санузла',
+  bigLoggia: 'Большая лоджия',
+  wardrobe: 'Гардеробная',
+  kitchenLivingRoom: 'Кухня-гостиная',
+  loggia: 'Лоджия',
+  laundry: 'Постирочная',
+};
+
 const filter = document.querySelector('.flats-filters');
 
 const filterProject = (flat) => {
@@ -68,10 +77,27 @@ const filterSquare = (flat) => {
   return flag;
 };
 
+const planFeature = document.querySelector('input[name=plans]:checked');
+console.log(planFeature);
+
+const filterPlan = (flat) => {
+  let flag = true;
+
+  const planFeatures = document.querySelectorAll('input[name=plans]:checked');
+
+  for (let plan of planFeatures) {
+    if (!flat.planAdvantages.includes(plan.value)) {
+      return flag = false;
+    }
+  }
+
+  return flag;
+};
+
 const setFilter = (cb) => {
   filter.addEventListener('input', () => {
     cb();
   })
 };
 
-export { setFilter, filterProject, filterRooms, filterPrice, filterSquare };
+export { setFilter, filterProject, filterRooms, filterPrice, filterSquare, filterPlan };

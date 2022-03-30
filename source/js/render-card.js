@@ -2,7 +2,7 @@ import 'swiper/scss';
 import 'swiper/scss/pagination';
 
 import { setSlider } from './image-slider';
-import { filterProject, filterRooms, filterPrice, filterSquare } from './filter';
+import { filterProject, filterRooms, filterPrice, filterSquare,filterPlan } from './filter';
 
 const EXEPTION_FOR_TITLE = 'студия';
 
@@ -23,8 +23,9 @@ const renderCard = (flats) => {
 
   flats
     .slice()
-    .filter(flat => filterProject(flat))
     .filter(flat => filterRooms(flat))
+    .filter(flat => filterPlan(flat))
+    .filter(flat => filterProject(flat))
     .filter(flat => filterPrice(flat))
     .filter(flat => filterSquare(flat))
     .forEach((flat, index) => {

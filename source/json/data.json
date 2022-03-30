@@ -11,6 +11,9 @@
       "../img/complex/defans.jpg",
       "../img/complex/moscow.jpg"
     ],
+    "planAdvantages": [
+      "moreToilets","bigLoggia", "laundry"
+    ],
     "sameLayoutFlatCount": 15,
     "minPrice": 2.5,
     "roomsQuantity": 1,
@@ -24,9 +27,12 @@
       "../img/flat/flat-01.png"
     ],
     "photos": [],
+    "planAdvantages": [
+      "moreToilets","bigLoggia", "laundry", "kitchenLivingRoom"
+    ],
     "sameLayoutFlatCount": 4,
     "minPrice": 2.7,
-    "roomsQuantity": 4,
+    "roomsQuantity": 2,
     "square": 27
   },
   {
@@ -39,6 +45,9 @@
     ],
     "photos": [
       "../img/complex/moscow.jpg"
+    ],
+    "planAdvantages": [
+      "laundry", "kitchenLivingRoom"
     ],
     "sameLayoutFlatCount": 12,
     "minPrice": 3.7,
@@ -58,6 +67,9 @@
       "../img/complex/moscow.jpg",
       "../img/complex/defans.jpg"
     ],
+    "planAdvantages": [
+      "bigLoggia", "loggia", "laundry", "kitchenLivingRoom"
+    ],
     "sameLayoutFlatCount": 20,
     "minPrice": 3,
     "roomsQuantity": 1,
@@ -75,6 +87,9 @@
       "../img/complex/moscow.jpg",
       "../img/complex/architector.jpg"
     ],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry", "moreToilets"
+    ],
     "sameLayoutFlatCount": 5,
     "minPrice": 2.7,
     "roomsQuantity": 1,
@@ -89,6 +104,9 @@
       "../img/flat/flat-02.png"
     ],
     "photos": [],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry", "moreToilets", "loggia"
+    ],
     "sameLayoutFlatCount": 12,
     "minPrice": 3,
     "roomsQuantity": 1,
@@ -103,6 +121,9 @@
       "../img/flat/flat-02.png"
     ],
     "photos": [],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry", "moreToilets", "loggia", "kitchenLivingRoom"
+    ],
     "sameLayoutFlatCount": 12,
     "minPrice": 3.2,
     "roomsQuantity": 5,
@@ -120,6 +141,9 @@
       "../img/complex/defans.jpg",
       "../img/complex/moscow.jpg"
     ],
+    "planAdvantages": [
+      "bigLoggia", "laundry", "loggia", "kitchenLivingRoom"
+    ],
     "sameLayoutFlatCount": 15,
     "minPrice": 3,
     "roomsQuantity": 1,
@@ -133,6 +157,9 @@
       "../img/flat/flat-01.png"
     ],
     "photos": [],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry", "loggia"
+    ],
     "sameLayoutFlatCount": 4,
     "minPrice": 3.4,
     "roomsQuantity": 2,
@@ -148,6 +175,9 @@
     ],
     "photos": [
       "../img/complex/moscow.jpg"
+    ],
+    "planAdvantages": [
+      "wardrobe", "laundry", "moreToilets", "loggia", "kitchenLivingRoom"
     ],
     "sameLayoutFlatCount": 12,
     "minPrice": 3.7,
@@ -167,6 +197,9 @@
       "../img/complex/moscow.jpg",
       "../img/complex/defans.jpg"
     ],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "moreToilets", "loggia", "kitchenLivingRoom"
+    ],
     "sameLayoutFlatCount": 20,
     "minPrice": 3,
     "roomsQuantity": 2,
@@ -184,6 +217,9 @@
       "../img/complex/moscow.jpg",
       "../img/complex/architector.jpg"
     ],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry", "moreToilets", "kitchenLivingRoom"
+    ],
     "sameLayoutFlatCount": 5,
     "minPrice": 2.75,
     "roomsQuantity": 1,
@@ -198,6 +234,9 @@
       "../img/flat/flat-02.png"
     ],
     "photos": [],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry", "kitchenLivingRoom"
+    ],
     "sameLayoutFlatCount": 12,
     "minPrice": 2.5,
     "roomsQuantity": 1,
@@ -212,6 +251,9 @@
       "../img/flat/flat-02.png"
     ],
     "photos": [],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry", "moreToilets", "kitchenLivingRoom"
+    ],
     "sameLayoutFlatCount": 12,
     "minPrice": 2.5,
     "roomsQuantity": 1,
@@ -229,6 +271,9 @@
       "../img/complex/defans.jpg",
       "../img/complex/moscow.jpg"
     ],
+    "planAdvantages": [
+      "bigLoggia", "loggia", "kitchenLivingRoom"
+    ],
     "sameLayoutFlatCount": 15,
     "minPrice": 3.1,
     "roomsQuantity": 1,
@@ -242,6 +287,9 @@
       "../img/flat/flat-01.png"
     ],
     "photos": [],
+    "planAdvantages": [
+      "laundry", "moreToilets", "loggia", "kitchenLivingRoom"
+    ],
     "sameLayoutFlatCount": 4,
     "minPrice": 3.3,
     "roomsQuantity": 4,
@@ -257,6 +305,9 @@
     ],
     "photos": [
       "../img/complex/moscow.jpg"
+    ],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry", "loggia", "kitchenLivingRoom"
     ],
     "sameLayoutFlatCount": 12,
     "minPrice": 3.7,
@@ -276,6 +327,9 @@
       "../img/complex/moscow.jpg",
       "../img/complex/defans.jpg"
     ],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry"
+    ],
     "sameLayoutFlatCount": 20,
     "minPrice": 3,
     "roomsQuantity": 1,
@@ -293,6 +347,9 @@
       "../img/complex/moscow.jpg",
       "../img/complex/architector.jpg"
     ],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "loggia", "kitchenLivingRoom"
+    ],
     "sameLayoutFlatCount": 5,
     "minPrice": 2.7,
     "roomsQuantity": 1,
@@ -307,6 +364,9 @@
       "../img/flat/flat-02.png"
     ],
     "photos": [],
+    "planAdvantages": [
+      "bigLoggia"
+    ],
     "sameLayoutFlatCount": 12,
     "minPrice": 3,
     "roomsQuantity": 1,
@@ -321,6 +381,9 @@
       "../img/flat/flat-02.png"
     ],
     "photos": [],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry"
+    ],
     "sameLayoutFlatCount": 12,
     "minPrice": 3.2,
     "roomsQuantity": 5,
@@ -338,6 +401,9 @@
       "../img/complex/defans.jpg",
       "../img/complex/moscow.jpg"
     ],
+    "planAdvantages": [
+      "moreToilets", "loggia", "kitchenLivingRoom"
+    ],
     "sameLayoutFlatCount": 15,
     "minPrice": 2.4,
     "roomsQuantity": 1,
@@ -351,6 +417,9 @@
       "../img/flat/flat-01.png"
     ],
     "photos": [],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "kitchenLivingRoom"
+    ],
     "sameLayoutFlatCount": 4,
     "minPrice": 2.7,
     "roomsQuantity": 2,
@@ -366,6 +435,9 @@
     ],
     "photos": [
       "../img/complex/moscow.jpg"
+    ],
+    "planAdvantages": [
+      "bigLoggia", "loggia", "kitchenLivingRoom"
     ],
     "sameLayoutFlatCount": 12,
     "minPrice": 3.7,
@@ -385,6 +457,9 @@
       "../img/complex/moscow.jpg",
       "../img/complex/defans.jpg"
     ],
+    "planAdvantages": [
+      "moreToilets", "loggia", "kitchenLivingRoom"
+    ],
     "sameLayoutFlatCount": 20,
     "minPrice": 3.7,
     "roomsQuantity": 5,
@@ -402,6 +477,9 @@
       "../img/complex/moscow.jpg",
       "../img/complex/architector.jpg"
     ],
+    "planAdvantages": [
+      "loggia", "kitchenLivingRoom"
+    ],
     "sameLayoutFlatCount": 5,
     "minPrice": 2.7,
     "roomsQuantity": 1,
@@ -416,6 +494,9 @@
       "../img/flat/flat-02.png"
     ],
     "photos": [],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry", "kitchenLivingRoom"
+    ],
     "sameLayoutFlatCount": 12,
     "minPrice": 2.5,
     "roomsQuantity": 1,
@@ -430,6 +511,9 @@
       "../img/flat/flat-02.png"
     ],
     "photos": [],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe"
+    ],
     "sameLayoutFlatCount": 12,
     "minPrice": 2.5,
     "roomsQuantity": 1,
