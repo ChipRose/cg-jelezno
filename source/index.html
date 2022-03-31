@@ -12,7 +12,9 @@
   <main class="main-index">
     <div class="container main-index__container">
       <section class="flats main-index__content">
-        <h1 class="clear--title flats__title"></h1>
+        <h1 class="clear--title flats__title">
+          Планировки
+        </h1>
         <ul class="clear--list flats__list"></ul>
       </section>
       <section class="filters main-index__filters">
@@ -20,7 +22,7 @@
         <form class="flats-filters" action="#" autocomplete="off">
           <fieldset class="clear--fieldset flats-filters__rooms button-check">
             <legend class="filter-legend flats-filters__legend">
-              Количество комнат
+              <span class="filter-legend__title">Количество комнат</span>
             </legend>
             <ul class="clear--list button-check__list">
               <li class="button-check__item button-check__item--rooms">
@@ -63,7 +65,7 @@
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__plans checkbox">
             <legend class="filter-legend flats-filters__legend">
-              Особенности планировки
+              <span class="filter-legend__title">Особенности планировки</span>
             </legend>
             <ul class="clear--list checkbox__list checkbox__list--plan">
               <li class="checkbox__item">
@@ -99,16 +101,20 @@
             <a class="clear--link checkbox__all-link" href="#">Показать все</a>
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__project button-check">
-            <legend class="filter-legend flats-filters__legend">
-              Проект
+            <legend class="clear--legend filter-legend  filter-legend--project flats-filters__legend">
+              <span class="filter-legend__title">Проект</span>
+              <span class="filter-legend__link-block">
+                <a class="clear--link filter-legend__link" href="#">Выбрать на карте</a>
+              </span>
             </legend>
-            <a class="clear--link" href="#">Выбрать на карте</a>
             <ul class="clear--list button-check__list">
               <li class="button-check__item button-check__item--project">
                 <input class="visually-hidden button-check__input" type="checkbox" name="project" value="znak"
                   id="znak">
                 <label for="znak" class="button-check__label button-check__label--project">
-                  <img src="img/icon/icon-znak.svg" width="16" height="16" alt="Логотип ZNAK">
+                  <span class="button-check_label-img">
+                    <img class="clear-img" src="img/icon/icon-znak.svg" width="16" height="16" alt="Логотип ZNAK">
+                  </span>
                   <span>ZNAK</span>
                 </label>
               </li>
@@ -116,7 +122,9 @@
                 <input class="visually-hidden button-check__input" type="checkbox" name="project" value="lomonosov"
                   id="lomonosov">
                 <label for="lomonosov" class="button-check__label button-check__label--project">
-                  <img src="img/icon/icon-lomonosov.svg" width="16" height="16" alt="Логотип На Ломоносова">
+                  <span class="button-check_label-img">
+                    <img src="img/icon/icon-lomonosov.svg" width="16" height="16" alt="Логотип На Ломоносова">
+                  </span>
                   <span>На Ломоносова</span>
                 </label>
               </li>
@@ -124,7 +132,9 @@
                 <input class="visually-hidden button-check__input" type="checkbox" name="project" value="vasilki"
                   id="vasilki">
                 <label for="vasilki" class="button-check__label button-check__label--project">
-                  <img src="img/icon/icon-vasilki.svg" width="16" height="16" alt="Логотип Васильки">
+                  <span class="button-check_label-img">
+                    <img src="img/icon/icon-vasilki.svg" width="16" height="16" alt="Логотип Васильки">
+                  </span>
                   <span>Васильки</span>
                 </label>
               </li>
@@ -132,7 +142,9 @@
                 <input class="visually-hidden button-check__input" type="checkbox" name="project" value="kalinina"
                   id="kalinina">
                 <label for="kalinina" class="button-check__label button-check__label--project">
-                  <img src="img/icon/icon-kalinina.svg" width="16" height="16" alt="Логотип На Калинина">
+                  <span class="button-check_label-img">
+                    <img src="img/icon/icon-kalinina.svg" width="16" height="16" alt="Логотип На Калинина">
+                  </span>
                   <span>На Калинина</span>
                 </label>
               </li>
@@ -140,35 +152,35 @@
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__house">
             <legend class="filter-legend flats-filters__legend">
-              Дом
+              <span class="filter-legend__title">Дом</span>
+              <span class="filter-legend__link-block">
+                <a class="clear--link filter-legend__link" href="#">Выбрать на генплане</a>
+              </span>
             </legend>
-            <a class="clear--link" href="#">Выбрать на карте</a>
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__price range" tabindex="1">
             <legend class="filter-legend flats-filters__legend">
-              Стоимость, ₽
+              <span class="filter-legend__title">Стоимость, ₽</span>
             </legend>
-            <div class="range__value-block">
-              <ul class="clear--list range__field-list">
-                <li class="range__item">
-                  <input class="clear--input range__field" id="price-min" type="number" name="priceMin"
-                    placeholder="2354000" value="2354000" min="2354000" max="3700000">
-                  <span class="range__placeholder">от</span>
-                </li>
-                <li class="range__item">
-                  <input class="clear--input range__field" id="price-max" type="number" name="priceMax"
-                    placeholder="3700000" value="3700000" min="2354000" max="3700000">
-                  <span class="range__placeholder">до</span>
-                </li>
-              </ul>
-            </div>
+            <ul class="clear--list range__field-list">
+              <li class="range__item">
+                <input class="clear--input range__field" id="price-min" type="number" name="priceMin"
+                  placeholder="2354000" value="2354000" min="2354000" max="3700000">
+                <span class="range__placeholder">от</span>
+              </li>
+              <li class="range__item">
+                <input class="clear--input range__field" id="price-max" type="number" name="priceMax"
+                  placeholder="3700000" value="3700000" min="2354000" max="3700000">
+                <span class="range__placeholder">до</span>
+              </li>
+            </ul>
             <div class="range__slider-block range-slider">
               <div class="range-slider__container" id="price-range"></div>
             </div>
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__square range">
             <legend class="filter-legend flats-filters__legend">
-              Площадь, м <sup>2</sup>
+              <span class="filter-legend__title"> Площадь, м <sup>2</sup></span>
             </legend>
             <ul class="clear--list range__field-list">
               <li class="range__item">
@@ -188,9 +200,8 @@
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__house-status button-check">
             <legend class="filter-legend flats-filters__legend">
-              Проект
+              <span class="filter-legend__title">Срок сдачи</span>
             </legend>
-            <a class="clear--link" href="#">Выбрать на карте</a>
             <ul class="clear--list button-check__list">
               <li class="button-check__item button-check__item--house-status">
                 <input class="visually-hidden button-check__input" type="checkbox" name="house-status" value="ready"
@@ -239,7 +250,7 @@
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__view checkbox">
             <legend class="filter-legend flats-filters__legend">
-              Вид из окна
+              <span class="filter-legend__title"> Вид из окна</span>
             </legend>
             <ul class="clear--list checkbox__list">
               <li class="checkbox__item">
@@ -266,10 +277,9 @@
             </ul>
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__ceiling-hight button-check">
-            <legend class="class=" filter-legend flats-filters__legend"">
-              Проект
+            <legend class="filter-legend flats-filters__legend">
+              <span class="filter-legend__title">Высота потолков, м</span>
             </legend>
-            <a class="clear--link" href="#">Высота потолков</a>
             <ul class="clear--list button-check__list">
               <li class="button-check__item button-check__item--ceiling-hight">
                 <input class="visually-hidden button-check__input" type="checkbox" name="ceiling-hight" value="2.5"
@@ -303,7 +313,7 @@
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__flat-advantages checkbox">
             <legend class="filter-legend flats-filters__legend">
-              Преимущества квартиры
+              <span class="filter-legend__title">Преимущества квартиры</span>
             </legend>
             <ul class="clear--list checkbox__list checkbox__list--flat-advantages">
               <li class="checkbox__item">
@@ -341,7 +351,7 @@
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__house-advantages checkbox">
             <legend class="filter-legend flats-filters__legend">
-              Преимущества дома
+              <span class="filter-legend__title">Преимущества дома</span>
             </legend>
             <ul class="clear--list checkbox__list">
               <li class="checkbox__item">
@@ -375,11 +385,11 @@
                 <label for="underground-parking" class="checkbox__label">Подземный паркинг</label>
               </li>
             </ul>
-            <a class="clear--link" href="#">Показать все</a>
+            <a class="clear--link checkbox__all-link" href="#">Показать все</a>
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__infrastructure checkbox">
             <legend class="filter-legend flats-filters__legend">
-              Инфраструктура
+              <span class="filter-legend__title">Инфраструктура</span>
             </legend>
             <ul class="clear--list checkbox__list">
               <li class="checkbox__item">
@@ -413,11 +423,11 @@
                 <label for="sport-zone" class="checkbox__label">Спортивные зоны</label>
               </li>
             </ul>
-            <a class="clear--link" href="#">Показать все</a>
+            <a class="clear--link checkbox__all-link" href="#">Показать все</a>
           </fieldset>
           <fieldset class="clear--fieldset flats-filters__house-format checkbox">
             <legend class="filter-legend flats-filters__legend">
-              Формат дома
+              <span class="filter-legend__title">Формат дома</span>
             </legend>
             <ul class="clear--list checkbox__list">
               <li class="checkbox__item">
@@ -451,7 +461,7 @@
                 <label for="lane-house" class="checkbox__label">Лайнхаус</label>
               </li>
             </ul>
-            <a class="clear--link" href="#">Показать все</a>
+            <a class="clear--link checkbox__all-link" href="#">Показать все</a>
           </fieldset>
         </form>
       </section>

@@ -14,14 +14,20 @@
   margin-bottom: 8px;
 }
 
-//Rooms
+//Fieldset
 
-.flats-filters__rooms {
-  margin-bottom: 25px;
-}
-
-//Plans
-
-.flats-filters__plans {
+.flats-filters__rooms,
+.flats-filters__plans,
+.flats-filters__project,
+.flats-filters__house,
+.flats-filters__price,
+.flats-filters__square,
+.flats-filters__house-status,
+.flats-filters__view,
+.flats-filters__ceiling-hight,
+.flats-filters__flat-advantages,
+.flats-filters__house-advantages,
+.flats-filters__infrastructure,
+.flats-filters__house-format {
   margin-bottom: 25px;
 }

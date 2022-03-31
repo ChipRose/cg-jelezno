@@ -64,8 +64,19 @@
   padding: 8px 14px 10px;
 }
 
+//Label img
+
+.button-check_label-img {
+  margin-right: 6px;
+}
+
 //Input
 
 .button-check__input:checked + .button-check__label {
   box-shadow: 0 0 0 1px var(--cl-shd-filter-hover);
 }
+
+.button-check__input:hover + .button-check__label {
+  box-shadow: 0 0 0 1px var(--cl-shd-filter-hover);
+}
+

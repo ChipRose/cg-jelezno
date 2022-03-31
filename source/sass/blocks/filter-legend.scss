@@ -1,6 +1,67 @@
+//Legend
+
 .filter-legend {
+  padding-right: 19px;
+  display: inline-block;
+  position: relative;
   font-family:"Montserrat", "Helvetica", sans-serif;
   font-weight: 600;
   font-size: var(--fz-filter-legend);
   line-height: var(--lh-filter-legend);
+  transition: color 0.3s ease-in;
+
+  &::after {
+    content: "?";
+    width: 14px;
+    height: 14px;
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: var(--fz-filter-info);
+    line-height: var(--lh-filter-info);
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--cl-bg-filter-legend-info-hover);
+    color: var(--cl-txt-filter-legend-info-hover);
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: var(--cl-txt-filter-legend-hover);
+  }
+
+  &:hover::after {
+    display: block;
+  }
+}
+
+.filter-legend--project {
+  display: flex;
+  align-items: center;
+}
+
+//Title
+
+.filter-legend__title {
+  margin-right: 7px;
+}
+
+//Link
+
+.filter-legend__link {
+  font-family:"Montserrat", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: var(--fz-filter-item);
+  line-height: var(--lh-filter-item);
+  color: var(--cl-txt-filter-link);
+  transition: color 0.3s ease-in;
+
+  &:hover {
+    color: var(--cl-txt-filter-link-hover)
+  }
 }

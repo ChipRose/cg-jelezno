@@ -17,6 +17,7 @@
     transform: translateY(-50%);
     border: 1px solid var(--cl-brd-filter-field);
     border-radius: 2px;
+    transition: all 0.3s ease-in;
   }
 
   &::after {
@@ -48,6 +49,7 @@
 
 .checkbox__item {
   margin-bottom: 4px;
+  transition: all 0.3s ease-in;
 
   &:last-child {
     margin-bottom: 0;
@@ -73,6 +75,7 @@
 
 .checkbox__all-link {
   padding: 5px 12px 5px 1px;
+  display: inline-block;
   position: relative;
   color: var(--cl-txt-filter-link);
 

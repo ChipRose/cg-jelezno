@@ -5,6 +5,12 @@
   display: flex;
 }
 
+//List 
+
+.range__field-list {
+  margin-bottom: 8px;
+}
+
 //Item
 
 .range__item {
@@ -36,7 +42,7 @@
   }
 }
 
-//Sratic placeholder
+//Static placeholder
 
 .range__placeholder {
   position: absolute;
