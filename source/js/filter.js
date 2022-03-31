@@ -78,7 +78,6 @@ const filterSquare = (flat) => {
 };
 
 const planFeature = document.querySelector('input[name=plans]:checked');
-console.log(planFeature);
 
 const filterPlan = (flat) => {
   let flag = true;

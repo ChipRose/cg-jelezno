@@ -2,6 +2,7 @@
 
 .checkbox__label {
   padding-left: 22px;
+  margin-right: 5px;
   display: block;
   position: relative;
   cursor: pointer;
@@ -49,6 +50,7 @@
 
 .checkbox__item {
   margin-bottom: 4px;
+  display: flex;
   transition: all 0.3s ease-in;
 
   &:last-child {
@@ -63,12 +65,27 @@
     background-color: var(--cl-bg-filter-checkbox-hover);
     border: none;
   }
+
+  &:hover .checkbox__button {
+    display: flex;
+  }
 }
 
 //Input
 
 .checkbox__input:checked + .checkbox__label::after {
   display: block;
+}
+
+//Button
+
+.checkbox__button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--cl-txt-filter-info);
+  color: var(--cl-txt-filter-info);
+  opacity: 0.5;
 }
 
 //Link 

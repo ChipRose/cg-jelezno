@@ -31,3 +31,34 @@
 .flats-filters__house-format {
   margin-bottom: 25px;
 }
+
+.flats-filters__house-status,
+.flats-filters__view,
+.flats-filters__ceiling-hight,
+.flats-filters__flat-advantages,
+.flats-filters__house-advantages,
+.flats-filters__infrastructure,
+.flats-filters__house-format {
+  position: relative;
+
+  &::before {
+    content: "Фильтр находится в разработке";
+    padding: 20px;
+    width: auto;
+    height: auto;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    background-color: var(--cl-bg-filter-error);
+    border: 2px solid var(--cl-brd-filter-error);
+    text-align: center;
+    overflow: hidden;
+  }
+
+  &:hover::before {
+    display: block;
+  }
+}
