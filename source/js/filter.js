@@ -82,9 +82,9 @@ const filterPlan = (flat) => {
   return flag;
 };
 
-const setFilter = (cb) => {
+const setFilter = (...callbacks) => {
   filter.addEventListener('input', (evt) => {
-    cb(evt);
+    callbacks.forEach((cb) => cb(evt));
   })
 };
 

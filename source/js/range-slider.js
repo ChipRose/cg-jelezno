@@ -55,11 +55,11 @@ const setSlider = (sliderElement, min, max, step) => {
 };
 
 setSlider(priceRange, LimitValue.PRICE.MIN, LimitValue.PRICE.MAX, LimitValue.PRICE.STEP);
-setSlider(squareRange, LimitValue.SQUARE.MIN, LimitValue.SQUARE.MAX,  LimitValue.SQUARE.STEP);
+setSlider(squareRange, LimitValue.SQUARE.MIN, LimitValue.SQUARE.MAX, LimitValue.SQUARE.STEP);
 
 const setSliderDependencies = (field, sliderElement, limit) => {
   const { MAIN_FIELD, MIN_FIELD, MAX_FIELD, ACCURACY } = field;
-  const {MIN, MAX} = limit;
+  const { MIN, MAX } = limit;
 
   const mainField = document.querySelector(MAIN_FIELD);
   const minField = document.querySelector(MIN_FIELD);
@@ -87,7 +87,7 @@ const setSliderDependencies = (field, sliderElement, limit) => {
 setSliderDependencies(FieldProperties.PRICE, priceRange, LimitValue.PRICE);
 setSliderDependencies(FieldProperties.SQUARE, squareRange, LimitValue.SQUARE);
 
-const setRangeListeners = (cb) =>{
+const setRangeListeners = (cb) => {
   minPrice.addEventListener('blur', () => {
     cb();
   });
@@ -108,5 +108,7 @@ const setDefautFieldsState = () => {
   minSquare.value = LimitValue.SQUARE.MIN;
   maxSquare.value = LimitValue.SQUARE.MAX;
 };
+
+setDefautFieldsState();
 
 export { setRangeListeners, setDefautFieldsState };
