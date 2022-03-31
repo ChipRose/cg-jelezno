@@ -83,8 +83,8 @@ const filterPlan = (flat) => {
 };
 
 const setFilter = (cb) => {
-  filter.addEventListener('input', () => {
-    cb();
+  filter.addEventListener('input', (evt) => {
+    cb(evt);
   })
 };
 
