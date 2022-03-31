@@ -1,6 +1,5 @@
 import Swiper, {Pagination} from 'swiper';
 
-
 const setSlider = (element, pagination) => {
   const sliderOptions = {
     modules: [Pagination],
