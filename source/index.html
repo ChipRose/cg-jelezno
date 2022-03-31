@@ -12,9 +12,37 @@
   <main class="main-index">
     <div class="container main-index__container">
       <section class="flats main-index__content">
-        <h1 class="clear--title flats__title">
+        <h1 class="clear--title main-title flats__main-title">
           Планировки
         </h1>
+        <ul class="flats__filter-tag-list"></ul>
+        <div class="flats__view-block view-button">
+          <a class="clear--link view-button__sort-link sort-link" href="#">
+            Сначала дешевле
+          </a>
+          <ul class="clear--list flats__view-filter view-button__list">
+            <li class="view-button__item">
+              <input class="visually-hidden view-button__checkbox" id="view-button-list" type="radio" name="view-button">
+              <label for="view-button-list" class="view-button__label">
+                <svg class="view-button__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path 
+                    d="M0 0H16V4H0V0ZM1 3H15V1H1V3ZM0 6H16V10H0V6ZM1 9H15V7H1V9ZM15 13H1V15H15V13ZM16 12V16H0V12H16Z" />
+                </svg>
+              </label>
+            </li>
+            <li class="view-button__item">
+              <input class="visually-hidden view-button__checkbox" checked id="view-button-window" type="radio" name="view-button">
+              <label for="view-button-window" class="view-button__label">
+                <svg class="view-button__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1 1H6V6H1V1ZM0 7V0H7V7H0ZM10 1H15V6H10V1ZM9 7V0H16V7H9ZM6 10H1V15H6V10ZM0 9V16H7V9H0ZM10 10H15V15H10V10ZM9 16V9H16V16H9Z" />
+              </svg>
+              </label>
+            </li>
+          </ul>
+        </div>
         <ul class="clear--list flats__list"></ul>
       </section>
       <section class="filters main-index__filters">
@@ -343,32 +371,38 @@
                 <input class="visually-hidden checkbox__input" type="checkbox" name="flat-advantages"
                   value="neighboursless" id="neighboursless">
                 <label for="neighboursless" class="checkbox__label">Мало соседей на этаже</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="flat-advantages"
-                  value="arcWindows" id="arc-windows">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="flat-advantages" value="arcWindows"
+                  id="arc-windows">
                 <label for="arc-windows" class="checkbox__label">Арочные окна</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
               <li class="checkbox__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="flat-advantages"
                   value="windowInBathroom" id="window-in-bathroom">
                 <label for="window-in-bathroom" class="checkbox__label">Ванная с окном</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
               <li class="checkbox__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="flat-advantages"
                   value="twoWindowsInLivingRoom" id="two-windows-in-livingRoom">
                 <label for="two-windows-in-livingRoom" class="checkbox__label">Гостинная с двумя окнами</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
               <li class="checkbox__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="flat-advantages"
                   value="threeFlatsPerFloor" id="three-flats-per-floor">
                 <label for="three-flats-per-floor" class="checkbox__label">До 3-х квартир на этаже</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
               <li class="checkbox__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="flat-advantages"
                   value="windowInKitchen" id="window-in-kitchen">
                 <label for="window-in-kitchen" class="checkbox__label">Кухня с окном в рабочей зоне</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
             </ul>
             <a class="clear--link checkbox__all-link" href="#">Показать все</a>
           </fieldset>
@@ -382,32 +416,38 @@
                 <input class="visually-hidden checkbox__input" type="checkbox" name="house-advantages"
                   value="bicycleRoom" id="bicycle-room">
                 <label for="bicycle-room" class="checkbox__label">Велосипедная</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
               <li class="checkbox__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="house-advantages"
-                  value="buggyRoom" id="buggy-room">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="house-advantages" value="buggyRoom"
+                  id="buggy-room">
                 <label for="buggy-room" class="checkbox__label">Колясочная</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
               <li class="checkbox__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="house-advantages"
                   value="pantryRoom" id="pantry-room">
                 <label for="pantry-room" class="checkbox__label">Кладовые</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
               <li class="checkbox__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="house-advantages"
                   value="carlessYard" id="carless-yard">
                 <label for="carless-yard" class="checkbox__label">Двор без машин</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
               <li class="checkbox__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="house-advantages"
                   value="closedYard" id="closed-yard">
                 <label for="closed-yard" class="checkbox__label">Закрытая территория</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
               <li class="checkbox__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="house-advantages"
                   value="undergroundParking" id="underground-parking">
                 <label for="underground-parking" class="checkbox__label">Подземный паркинг</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
             </ul>
             <a class="clear--link checkbox__all-link" href="#">Показать все</a>
           </fieldset>
@@ -421,32 +461,38 @@
                 <input class="visually-hidden checkbox__input" type="checkbox" name="infrastructure" value="school"
                   id="school">
                 <label for="school" class="checkbox__label">Школа</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
               <li class="checkbox__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="infrastructure"
                   value="kindergarden" id="kindergarden">
                 <label for="kindergarden" class="checkbox__label">Детский сад</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
               <li class="checkbox__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="infrastructure" value="yardPark"
                   id="yard-park">
                 <label for="yard-park" class="checkbox__label">Двор-парк</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
               <li class="checkbox__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="infrastructure" value="shops"
                   id="shops">
                 <label for="shops" class="checkbox__label">Магазины</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
               <li class="checkbox__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="infrastructure" value="lanes"
                   id="lanes">
                 <label for="lanes" class="checkbox__label">Велодорожки</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
               <li class="checkbox__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="infrastructure" value="sportZone"
                   id="sport-zone">
                 <label for="sport-zone" class="checkbox__label">Спортивные зоны</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
             </ul>
             <a class="clear--link checkbox__all-link" href="#">Показать все</a>
           </fieldset>
@@ -460,35 +506,42 @@
                 <input class="visually-hidden checkbox__input" type="checkbox" name="house-format" value="lowRise"
                   id="low-rise">
                 <label for="low-rise" class="checkbox__label">Малоэтажный</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
               <li class="checkbox__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="house-format" value="midRise"
                   id="mid-rise">
                 <label for="mid-rise" class="checkbox__label">Среднеэтажный</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
               <li class="checkbox__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="house-format" value="clubHouse"
                   id="club-house">
                 <label for="club-house" class="checkbox__label">Клубный дом</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
               <li class="checkbox__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="house-format" value="townHouse"
                   id="townhouse">
                 <label for="townhouse" class="checkbox__label">Таунхаус</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
               <li class="checkbox__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="house-format" value="quadHouse"
                   id="quad-house">
                 <label for="quad-house" class="checkbox__label">Квадрохаус</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
               <li class="checkbox__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="house-format" value="laneHouse"
                   id="lane-house">
                 <label for="lane-house" class="checkbox__label">Лайнхаус</label>
-                <button class="clear--button checkbox__button info-button" type="button">?</button>              </li>
+                <button class="clear--button checkbox__button info-button" type="button">?</button>
+              </li>
             </ul>
             <a class="clear--link checkbox__all-link" href="#">Показать все</a>
           </fieldset>
+          <button class="clear--button flats-filters__reset-button" id="button-clear" type="reset">Сбросить все</button>
         </form>
       </section>
     </div>

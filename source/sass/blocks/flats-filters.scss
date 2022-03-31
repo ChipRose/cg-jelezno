@@ -3,6 +3,7 @@
   padding-right: 30px;
   padding-bottom: 30px;
   padding-left: 15px;
+  position: relative;
   font-size: var(--fz-filter-item);
   line-height: var(--lh-filter-item);
   background-color: var(--cl-bg-filter);
@@ -61,4 +62,15 @@
   &:hover::before {
     display: block;
   }
+}
+
+//Button
+
+.flats-filters__reset-button {
+  padding: 5px;
+  min-width: 100px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 42px;
+  right: calc(100% + 15px);
 }

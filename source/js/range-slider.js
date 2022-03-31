@@ -102,4 +102,11 @@ const setRangeListeners = (cb) =>{
   });
 };
 
-export { setRangeListeners };
+const setDefautFieldsState = () => {
+  minPrice.value = LimitValue.PRICE.MIN;
+  maxPrice.value = LimitValue.PRICE.MAX;
+  minSquare.value = LimitValue.SQUARE.MIN;
+  maxSquare.value = LimitValue.SQUARE.MAX;
+};
+
+export { setRangeListeners, setDefautFieldsState };

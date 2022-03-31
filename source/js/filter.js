@@ -5,15 +5,6 @@ const projectValues = {
   kalinina: 'На Калинина',
 };
 
-const planValues = {
-  moreToilets: '2 и более санузла',
-  bigLoggia: 'Большая лоджия',
-  wardrobe: 'Гардеробная',
-  kitchenLivingRoom: 'Кухня-гостиная',
-  loggia: 'Лоджия',
-  laundry: 'Постирочная',
-};
-
 const filter = document.querySelector('.flats-filters');
 
 const filterProject = (flat) => {
@@ -77,8 +68,6 @@ const filterSquare = (flat) => {
   return flag;
 };
 
-const planFeature = document.querySelector('input[name=plans]:checked');
-
 const filterPlan = (flat) => {
   let flag = true;
 
@@ -99,4 +88,18 @@ const setFilter = (cb) => {
   })
 };
 
-export { setFilter, filterProject, filterRooms, filterPrice, filterSquare, filterPlan };
+const clearCheckbox = () => {
+  const checkboxSet = filter.querySelectorAll('input:checked');
+  checkboxSet.forEach((checkbox) => {
+    checkbox.checked = false;
+  })
+};
+
+const clearForm = (...callbacks) => {
+  filter.addEventListener('reset', (evt) => {
+    evt.preventDefault();
+    callbacks.forEach((cb) => cb());
+  })
+};
+
+export { setFilter, filterProject, filterRooms, filterPrice, filterSquare, filterPlan, clearCheckbox, clearForm };

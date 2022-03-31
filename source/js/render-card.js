@@ -7,7 +7,7 @@ import { filterProject, filterRooms, filterPrice, filterSquare,filterPlan } from
 const EXEPTION_FOR_TITLE = 'студия';
 
 const cardTemplate = document.querySelector('#flat-card').content.querySelector('.flats__item');
-const title = document.querySelector('.flats__title');
+const title = document.querySelector('.main-title');
 const flatsList = document.querySelector('.flats__list');
 
 const createCardTitle = (flat) => {
