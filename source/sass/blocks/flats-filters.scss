@@ -1,8 +1,9 @@
 .flats-filters {
-  padding-top: 30px;
+  padding-top: 43px;
   padding-right: 30px;
   padding-bottom: 30px;
   padding-left: 15px;
+  box-sizing: border-box;
   position: relative;
   font-size: var(--fz-filter-item);
   line-height: var(--lh-filter-item);
@@ -68,9 +69,12 @@
 
 .flats-filters__reset-button {
   padding: 5px;
-  min-width: 100px;
+  min-width: 110px;
   box-sizing: border-box;
   position: absolute;
-  top: 42px;
+  top: 38px;
   right: calc(100% + 15px);
+  font-size: var(--fz-filter-button);
+  line-height: var( --lh-filter-button);
+  color: var(--cl-txt-filter-reset);
 }

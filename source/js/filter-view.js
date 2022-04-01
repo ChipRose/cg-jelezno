@@ -4,13 +4,18 @@ let viewSet = [];
 
 const filter = document.querySelector('.flats-filters');
 const filterViewList = document.querySelector('#filter-tag-list');
+const filterQuantityField = document.querySelector('#filter-quantity');
 
 const createFilterViewSet = (eventElement) => {
   if (eventElement.target.type !== 'number') {
+    let filterNumber = 0;
     viewSet = [];
     const allCheckProperties = filter.querySelectorAll('input:checked');
+  
     allCheckProperties.forEach((property) => {
       viewSet.push(returnTextContent(property.id));
+      filterNumber++;
+      filterQuantityField.textContent = filterNumber;
     })
   }
 
