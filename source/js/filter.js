@@ -1,9 +1,4 @@
-const projectValues = {
-  znak: 'ZNAK',
-  lomonosov: 'На Ломоносова',
-  vasilki: 'Васильки',
-  kalinina: 'На Калинина',
-};
+import { vocabularyID } from './vocabulary.js';
 
 const filter = document.querySelector('.flats-filters');
 
@@ -13,7 +8,7 @@ const filterProject = (flat) => {
   const projectCheckedFields = document.querySelectorAll('input[name=project]:checked');
 
   for (let project of projectCheckedFields) {
-    if (flat.housingComplexName === projectValues[project.value]) {
+    if (flat.housingComplexName === vocabularyID[project.value]) {
       return flag = true;
     } else {
       flag = false;

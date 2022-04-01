@@ -1,33 +1,40 @@
-import { setFilter } from './filter.js';
+import { returnTextContent } from './vocabulary.js';
 
+let viewSet = [];
+
+const filter = document.querySelector('.flats-filters');
 const filterViewList = document.querySelector('#filter-tag-list');
-const filterViewSet = [];
 
 const createFilterViewSet = (eventElement) => {
-  if(eventElement.target.type!=='number') {
-    const index = filterViewSet.indexOf(eventElement.target.value);
-    if (index === -1) {
-      filterViewSet.push(eventElement.target.value);
-    } else {
-      filterViewSet.splice(index, 1);
-    }
+  if (eventElement.target.type !== 'number') {
+    viewSet = [];
+    const allCheckProperties = filter.querySelectorAll('input:checked');
+    allCheckProperties.forEach((property) => {
+      viewSet.push(returnTextContent(property.id));
+    })
   }
-  return filterViewSet;
+
+  clearFilterViewList();
+
+  viewSet.forEach((element) => {
+    const newItem = document.createElement('li');
+    const newButton = document.createElement('button');
+    newItem.classList.add('filter-tag__item');
+    newButton.classList.add('clear--button');
+    newButton.classList.add('filter-tag__button');
+    newButton.type = 'button';
+    newButton.textContent = element;
+
+    newItem.appendChild(newButton);
+    filterViewList.appendChild(newItem);
+  });
 };
 
-const cardForRender = setFilter(createFilterViewSet);
-console.log(cardForRender);
+const clearFilterViewList = () => {
+  filterViewList.innerHTML = '';
+}
 
-//const setFilterView = () => {
-  //filterViewList.innerHTML='';
-  //createFilterViewSet.forEach((element) => {
-    //console.log(createFilterViewSet());
-    // const newItem = document.createElement('li');
-    // const newButton = document.createElement('button');
-    // newButton.textContent = element;
-    // newItem.appendChild(newButton);
-    // filterViewList.appendChild(newItem);
-  //});
-//};
+export { createFilterViewSet, clearFilterViewList };
+
 
 
