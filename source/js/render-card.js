@@ -9,6 +9,7 @@ const EXEPTION_FOR_TITLE = 'студия';
 const cardTemplate = document.querySelector('#flat-card').content.querySelector('.flats__item');
 const title = document.querySelector('.main-title');
 const flatsList = document.querySelector('.flats__list');
+const sortButton = document.querySelector('.sort-button');
 
 const createCardTitle = (flat) => {
   const { name, roomsQuantity, square } = flat;
@@ -17,7 +18,7 @@ const createCardTitle = (flat) => {
   return cardTitle;
 };
 
-const chooseCompare = (flag = 0) => {
+const chooseCompare = (eventElement) => {
   const comparePromosMin = (priceA, priceB) => {
     return priceA.minPrice - priceB.minPrice;
   };
@@ -26,7 +27,13 @@ const chooseCompare = (flag = 0) => {
     return priceB.minPrice - priceA.minPrice;
   };
 
-  return flag === 0 ? comparePromosMin: comparePromosMax;
+  return eventElement.target.id === 'max-min' ? comparePromosMax : comparePromosMin;
+};
+
+const setSort = (cb) => {
+  sortButton.addEventListener('click', (evt) => {
+    cb(evt);
+  })
 };
 
 const renderCard = (flats) => {
@@ -40,7 +47,7 @@ const renderCard = (flats) => {
     .filter(flat => filterProject(flat))
     .filter(flat => filterPrice(flat))
     .filter(flat => filterSquare(flat))
-    .sort(chooseCompare(0))
+    .sort(setSort(chooseCompare))
     .forEach((flat, index) => {
       const flatItem = cardTemplate.cloneNode(true);
       const sliderList = flatItem.querySelector('.slider__list');
@@ -85,4 +92,4 @@ const renderCard = (flats) => {
   title.textContent = `Найдено ${flatQuantity} планировок`;
 };
 
-export { renderCard };
+export { renderCard, setSort };

@@ -22,31 +22,55 @@
           </p>
         </div>
         <div class="filter-tag flats__tag-block">
-          <ul class="clear--list flats__filter-tag-list filter-tag__list" id ="filter-tag-list"></ul>
+          <ul class="clear--list flats__filter-tag-list filter-tag__list" id="filter-tag-list"></ul>
         </div>
         <div class="flats__view-block view-button">
-          <a class="clear--link view-button__sort-link sort-link" href="#">
-            Сначала дешевле
-          </a>
+          <div class="sort-button">
+            <a class="clear--link sort-button__link sort-link" href="#">
+              Сначала дешевле
+            </a>
+            <div class="sort-button__min">
+              <input class="visually-hidden sort-button__checkbox" checked name="sort" value="min-max" id="min-max"
+                type="radio">
+              <label class="sort-button__label sort-button__label--min" for="min-max">
+                <svg class="sort-button__icon" width="7" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.646447 4.35355C0.841709 4.54882 1.15829 4.54882 1.35355 4.35355L4 1.70711L6.64645 4.35355C6.84171 4.54882 7.15829 4.54882 7.35355 4.35355C7.54882 4.15829 7.54882 3.84171 7.35355 3.64645L4 0.292893L0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355Z" />
+                </svg>
+              </label>
+            </div>
+            <div class="sort-button__max">
+              <input class="visually-hidden sort-button__checkbox" name="sort" value="max-min" id="max-min"
+                type="radio">
+              <label class="sort-button__label sort-button__label--max" for="max-min">
+                <svg class="sort-button__icon" width="7" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.35355 0.646447C7.15829 0.451184 6.84171 0.451184 6.64645 0.646447L4 3.29289L1.35355 0.646447C1.15829 0.451184 0.841709 0.451184 0.646447 0.646447C0.451184 0.841709 0.451184 1.15829 0.646447 1.35355L4 4.70711L7.35355 1.35355C7.54882 1.15829 7.54882 0.841709 7.35355 0.646447Z" />
+                </svg>
+              </label>
+            </div>
+          </div>
           <ul class="clear--list flats__view-filter view-button__list">
             <li class="view-button__item">
-              <input class="visually-hidden view-button__checkbox" id="view-button-list" type="radio" name="view-button">
+              <input class="visually-hidden view-button__checkbox" id="view-button-list" type="radio"
+                name="view-button">
               <label for="view-button-list" class="view-button__label">
                 <svg class="view-button__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path 
+                  <path
                     d="M0 0H16V4H0V0ZM1 3H15V1H1V3ZM0 6H16V10H0V6ZM1 9H15V7H1V9ZM15 13H1V15H15V13ZM16 12V16H0V12H16Z" />
                 </svg>
               </label>
             </li>
             <li class="view-button__item">
-              <input class="visually-hidden view-button__checkbox" checked id="view-button-window" type="radio" name="view-button">
+              <input class="visually-hidden view-button__checkbox" checked id="view-button-window" type="radio"
+                name="view-button">
               <label for="view-button-window" class="view-button__label">
                 <svg class="view-button__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M1 1H6V6H1V1ZM0 7V0H7V7H0ZM10 1H15V6H10V1ZM9 7V0H16V7H9ZM6 10H1V15H6V10ZM0 9V16H7V9H0ZM10 10H15V15H10V10ZM9 16V9H16V16H9Z" />
-              </svg>
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1 1H6V6H1V1ZM0 7V0H7V7H0ZM10 1H15V6H10V1ZM9 7V0H16V7H9ZM6 10H1V15H6V10ZM0 9V16H7V9H0ZM10 10H15V15H10V10ZM9 16V9H16V16H9Z" />
+                </svg>
               </label>
             </li>
           </ul>
