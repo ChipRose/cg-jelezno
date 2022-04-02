@@ -11,7 +11,7 @@ const createFilterViewSet = (eventElement) => {
     let filterNumber = 0;
     viewSet = [];
     const allCheckProperties = filter.querySelectorAll('input:checked');
-  
+
     allCheckProperties.forEach((property) => {
       viewSet.push(returnTextContent(property.id));
       filterNumber++;
@@ -40,6 +40,3 @@ const clearFilterViewList = () => {
 }
 
 export { createFilterViewSet, clearFilterViewList };
-
-
-

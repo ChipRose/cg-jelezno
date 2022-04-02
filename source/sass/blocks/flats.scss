@@ -1,8 +1,9 @@
 .flats {
   padding-top: 30px;
   padding-right: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 13px;
   padding-left: 30px;
+  box-sizing: border-box;
 }
 
 //Title block
@@ -55,14 +56,14 @@
 
 .flats__item:last-child {
   margin-right: 0;
-
-  &:hover {
-    min-height: 411px;
-  }
 }
 
 .flats__item:nth-child(3n) {
   margin-right: 0;
+}
+
+.flats-item--correct-height:hover {
+  min-height: 390px;
 }
 
 //Content

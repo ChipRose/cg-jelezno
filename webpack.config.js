@@ -101,16 +101,16 @@ module.exports = {
         test: /\.(jpeg|jpg|png|gif|svg)$/i,
         type: 'asset',
       },
+      //JS
       {
-        //JS
         test: /\.js$/i,
         exclude: '/node_modules/',
         use: [
           { loader: 'babel-loader' },
         ],
       },
+      //Styles
       {
-        //Styles
         test: /\.scss$/i,
         use: [
           { loader: MiniCssExtractPlugin.loader },

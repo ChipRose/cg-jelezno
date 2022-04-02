@@ -3,37 +3,20 @@ import 'swiper/scss/pagination';
 
 import { setSlider } from './image-slider';
 import { filterProject, filterRooms, filterPrice, filterSquare, filterPlan } from './filter';
+import { chooseCompare } from './sort';
 
 const EXEPTION_FOR_TITLE = 'студия';
+const CARD_QUANTITY_ROW = 3;
 
 const cardTemplate = document.querySelector('#flat-card').content.querySelector('.flats__item');
 const title = document.querySelector('.main-title');
 const flatsList = document.querySelector('.flats__list');
-const sortButton = document.querySelector('.sort-button');
 
 const createCardTitle = (flat) => {
   const { name, roomsQuantity, square } = flat;
   name[0].toUpperCase();
   const cardTitle = (name === EXEPTION_FOR_TITLE) ? `${name.replace(name[0], name[0].toUpperCase())}, ${square} м` : `${roomsQuantity}-к ${name}, ${square} м`;
   return cardTitle;
-};
-
-const chooseCompare = (eventElement) => {
-  const comparePromosMin = (priceA, priceB) => {
-    return priceA.minPrice - priceB.minPrice;
-  };
-
-  const comparePromosMax = (priceA, priceB) => {
-    return priceB.minPrice - priceA.minPrice;
-  };
-
-  return eventElement.target.id === 'max-min' ? comparePromosMax : comparePromosMin;
-};
-
-const setSort = (cb) => {
-  sortButton.addEventListener('click', (evt) => {
-    cb(evt);
-  })
 };
 
 const renderCard = (flats) => {
@@ -47,7 +30,7 @@ const renderCard = (flats) => {
     .filter(flat => filterProject(flat))
     .filter(flat => filterPrice(flat))
     .filter(flat => filterSquare(flat))
-    .sort(setSort(chooseCompare))
+    .sort(chooseCompare())
     .forEach((flat, index) => {
       const flatItem = cardTemplate.cloneNode(true);
       const sliderList = flatItem.querySelector('.slider__list');
@@ -76,20 +59,36 @@ const renderCard = (flats) => {
 
   const flatsItems = flatsList.querySelectorAll('.flats__item');
 
-  flatsItems.forEach((flat, index) => {
-    const sliderItems = flat.querySelectorAll('.slider__item');
-    if (sliderItems.length > 1) {
-      setSlider(`slider-${index}`, `pagination-${index}`);
-    }
-  })
-
   for (let item of flatsItems) {
     if (item) {
       flatQuantity++;
     }
   }
 
+  const rowQuantity = parseInt(flatQuantity / CARD_QUANTITY_ROW);
+  let exceptionIndex = 0;
+
+  if (flatQuantity % CARD_QUANTITY_ROW !== 0) {
+    exceptionIndex = rowQuantity * CARD_QUANTITY_ROW;
+  } else {
+    exceptionIndex = flatQuantity - CARD_QUANTITY_ROW;
+  }
+
+  flatsItems.forEach((flat, index) => {
+    const sliderItems = flat.querySelectorAll('.slider__item');
+
+    if (sliderItems.length > 1) {
+      setSlider(`slider-${index}`, `pagination-${index}`);
+    }
+
+    if (index >= exceptionIndex) {
+      flat.classList.add('flats-item--correct-height')
+    }
+  })
+
+
+
   title.textContent = `Найдено ${flatQuantity} планировок`;
 };
 
-export { renderCard, setSort };
+export { renderCard };

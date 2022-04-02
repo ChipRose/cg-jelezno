@@ -14,9 +14,9 @@ const vocabularyID = {
   loggia: 'лоджия',
   laundry: 'постирочная',
   znak: 'ZNAK',
-  lomonosov: 'на Ломоносова',
+  lomonosov: 'На Ломоносова',
   vasilki: 'Васильки',
-  kalinina: 'на Калинина',
+  kalinina: 'На Калинина',
 };
 
 const returnTextContent = (idProperty) => {

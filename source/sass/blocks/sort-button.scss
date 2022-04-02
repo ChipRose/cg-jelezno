@@ -4,6 +4,7 @@
   display: grid;
   grid-template-rows: repeat(min-content, 2);
   grid-template-columns: 1fr 8px;
+  justify-content: space-between;
 }
 
 //Link
@@ -32,7 +33,7 @@
 
 //Checkbox
 
-.sort-button__checkbox:checked + .sort-button__label .sort-button__icon{
+.sort-button__checkbox:checked + .sort-button__label .sort-button__icon {
   fill: var(--cl-fill-sort-button-active);
 }
 
@@ -44,15 +45,16 @@
 }
 
 .sort-button__label--min {
-  margin-bottom: 2px;
+  padding: 2px 0;
 }
 
 .sort-button__label--max {
-  margin-top: 2px;
+  padding: 2px 0;
 }
 
 //Icon
 
 .sort-button__icon {
   fill: var(--cl-fill-sort-button);
+  pointer-events: none;
 }

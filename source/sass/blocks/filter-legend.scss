@@ -1,11 +1,10 @@
 //Legend
 
 .filter-legend {
-  display: inline-block;
   display: flex;
   align-items: center;
   position: relative;
-  font-family:"Montserrat", "Helvetica", sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
   font-weight: 600;
   font-size: var(--fz-filter-legend);
   line-height: var(--lh-filter-legend);
@@ -20,7 +19,7 @@
     display: block;
   }
 
-  &:hover .filter-legend__button{
+  &:hover .filter-legend__button {
     display: flex;
   }
 }
@@ -45,7 +44,7 @@
 //Link
 
 .filter-legend__link {
-  font-family:"Montserrat", "Helvetica", sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: var(--fz-filter-item);
   line-height: var(--lh-filter-item);
@@ -53,6 +52,6 @@
   transition: color 0.3s ease-in;
 
   &:hover {
-    color: var(--cl-txt-filter-link-hover)
+    color: var(--cl-txt-filter-link-hover);
   }
 }
