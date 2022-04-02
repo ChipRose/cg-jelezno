@@ -1,0 +1,26 @@
+//Filter count
+
+.filter-count {
+  display: flex;
+  align-items: center;
+  font-size: var(--fz-filter-count);
+  line-height: var(--lh-filter-count);
+}
+
+//Number
+
+.filter-count__number {
+  padding: 2px;
+  margin-right: 4px;
+  min-width: 14px;
+  min-height: 14px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fz-filter-number);
+  line-height: var(--lh-filter-number);
+  color: var(--cl-txt-view-number);
+  background-color: var(--cl-bg-view-number);
+  border-radius: 50%;
+}

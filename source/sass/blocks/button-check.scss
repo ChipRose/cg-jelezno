@@ -30,6 +30,12 @@
   }
 }
 
+.button-check__item--house-status {
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
 //Label
 
 .button-check__label {
@@ -50,6 +56,26 @@
   padding-left: 14px;
 }
 
+.button-check__label--house-status {
+  padding: 8px 14px 10px;
+}
+
+.button-check__label--ceiling-hight {
+  padding: 8px 14px 10px;
+}
+
+//Label img
+
+.button-check_label-img {
+  margin-right: 6px;
+}
+
+//Input
+
 .button-check__input:checked + .button-check__label {
+  box-shadow: 0 0 0 1px var(--cl-shd-filter-hover);
+}
+
+.button-check__input:hover + .button-check__label {
   box-shadow: 0 0 0 1px var(--cl-shd-filter-hover);
 }

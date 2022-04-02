@@ -1,0 +1,62 @@
+// Field
+
+.view-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+//Sort
+
+.view-button__sort {
+  flex: 0 0 170px;
+}
+
+//List
+
+.view-button__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+}
+
+//Item
+
+.view-button__item {
+  padding: 7px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cl-bg-view-button);
+  box-shadow: 0 4px 10px 0 var(--cl-shd-view-button);
+
+  &:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+//Label
+
+.view-button__label {
+  height: 16px;
+}
+
+//Icon
+
+.view-button__icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--cl-fill-view-button);
+}
+
+//Checkbox
+
+.view-button__checkbox:checked + .view-button__label .view-button__icon {
+  fill: var(--cl-fill-view-button-checked);
+}

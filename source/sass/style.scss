@@ -10,16 +10,23 @@
 @import "./blocks/body.scss";
 @import "./blocks/container.scss";
 /* Main Index */
+@import "./blocks/main-title.scss";
+@import "./blocks/filter-tag.scss";
+@import "./blocks/filter-count.scss";
+@import "./blocks/sort-button.scss";
+@import "./blocks/view-button.scss";
 @import "./blocks/main-index.scss";
 @import "./blocks/flats.scss";
 @import "./blocks/favorite.scss";
 @import "./blocks/card-button.scss";
 /* Filter */
-@import "./blocks/filters.scss";
+@import "./blocks/flats-filters.scss";
+@import "./blocks/filter-legend.scss";
 @import "./blocks/checkbox.scss";
 @import "./blocks/range.scss";
 @import "./blocks/range-slider.scss";
 @import "./blocks/button-check.scss";
+@import "./blocks/info-button.scss";
 /* Slider */
 @import "./blocks/swiper.scss";
 @import "./blocks/slider.scss";

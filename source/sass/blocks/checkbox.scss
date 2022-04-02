@@ -2,6 +2,7 @@
 
 .checkbox__label {
   padding-left: 22px;
+  margin-right: 5px;
   display: block;
   position: relative;
   cursor: pointer;
@@ -17,6 +18,7 @@
     transform: translateY(-50%);
     border: 1px solid var(--cl-brd-filter-field);
     border-radius: 2px;
+    transition: all 0.3s ease-in;
   }
 
   &::after {
@@ -34,8 +36,75 @@
   }
 }
 
+//List
+
+.checkbox__list--plan {
+  margin-bottom: 4px;
+}
+
+.checkbox__list--flat-advantages {
+  margin-bottom: 4px;
+}
+
+//Item
+
+.checkbox__item {
+  margin-bottom: 4px;
+  display: flex;
+  transition: all 0.3s ease-in;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    color: var(--cl-txt-filter-hover);
+  }
+
+  &:hover .checkbox__label::before {
+    background-color: var(--cl-bg-filter-checkbox-hover);
+    border: none;
+  }
+
+  &:hover .checkbox__button {
+    display: flex;
+  }
+}
+
 //Input
 
 .checkbox__input:checked + .checkbox__label::after {
   display: block;
+}
+
+//Button
+
+.checkbox__button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--cl-txt-filter-info);
+  color: var(--cl-txt-filter-info);
+  opacity: 0.5;
+}
+
+//Link
+
+.checkbox__all-link {
+  padding: 5px 12px 5px 1px;
+  display: inline-block;
+  position: relative;
+  color: var(--cl-txt-filter-link);
+
+  &::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 7px;
+    right: -4px;
+    border-left: 1px solid var(--cl-txt-filter-link);
+    border-bottom: 1px solid var(--cl-txt-filter-link);
+    transform: rotate(-45deg);
+  }
 }

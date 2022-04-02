@@ -1,0 +1,57 @@
+//Legend
+
+.filter-legend {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  font-weight: 600;
+  font-size: var(--fz-filter-legend);
+  line-height: var(--lh-filter-legend);
+  transition: color 0.3s ease-in;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--cl-txt-filter-legend-hover);
+  }
+
+  &:hover::after {
+    display: block;
+  }
+
+  &:hover .filter-legend__button {
+    display: flex;
+  }
+}
+
+//Button
+
+.filter-legend__button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  background-color: var(--cl-bg-filter-legend-info-hover);
+  color: var(--cl-txt-filter-legend-info-hover);
+}
+
+//Title
+
+.filter-legend__title {
+  margin-right: 7px;
+}
+
+//Link
+
+.filter-legend__link {
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: var(--fz-filter-item);
+  line-height: var(--lh-filter-item);
+  color: var(--cl-txt-filter-link);
+  transition: color 0.3s ease-in;
+
+  &:hover {
+    color: var(--cl-txt-filter-link-hover);
+  }
+}
