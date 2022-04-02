@@ -4,8 +4,8 @@
     "name": "квартира",
     "housingComplexName": "ZNAK",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [
       "../img/complex/defans.jpg",
@@ -24,7 +24,7 @@
     "name": "квартира",
     "housingComplexName": "ZNAK",
     "planLink": [
-      "../img/flat/flat-01.png"
+      "img/flat/flat-01.png"
     ],
     "photos": [],
     "planAdvantages": [
@@ -40,8 +40,8 @@
     "name": "студия",
     "housingComplexName": "На Ломоносова",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [
       "../img/complex/moscow.jpg"
@@ -59,8 +59,8 @@
     "name": "квартира",
     "housingComplexName": "ZNAK",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [
       "../img/complex/defans.jpg",
@@ -80,8 +80,8 @@
     "name": "студия",
     "housingComplexName": "На Калинина",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [
       "../img/complex/moscow.jpg",
@@ -100,8 +100,8 @@
     "name": "студия",
     "housingComplexName": "На Ломоносова",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [],
     "planAdvantages": [
@@ -117,8 +117,8 @@
     "name": "квартира",
     "housingComplexName": "Васильки",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [],
     "planAdvantages": [
@@ -134,8 +134,8 @@
     "name": "студия",
     "housingComplexName": "ZNAK",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [
       "../img/complex/defans.jpg",
@@ -170,8 +170,8 @@
     "name": "студия",
     "housingComplexName": "На Ломоносова",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [
       "../img/complex/moscow.jpg"
@@ -189,8 +189,8 @@
     "name": "квартира",
     "housingComplexName": "На Калинина",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [
       "../img/complex/defans.jpg",
@@ -210,8 +210,8 @@
     "name": "студия",
     "housingComplexName": "На Калинина",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [
       "../img/complex/moscow.jpg",
@@ -230,8 +230,8 @@
     "name": "студия",
     "housingComplexName": "На Ломоносова",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [],
     "planAdvantages": [
@@ -247,8 +247,8 @@
     "name": "квартира",
     "housingComplexName": "Васильки",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [],
     "planAdvantages": [
@@ -264,8 +264,8 @@
     "name": "студия",
     "housingComplexName": "ZNAK",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [
       "../img/complex/defans.jpg",
@@ -300,8 +300,8 @@
     "name": "студия",
     "housingComplexName": "На Ломоносова",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [
       "../img/complex/moscow.jpg"
@@ -319,8 +319,8 @@
     "name": "квартира",
     "housingComplexName": "ZNAK",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [
       "../img/complex/defans.jpg",
@@ -340,8 +340,8 @@
     "name": "студия",
     "housingComplexName": "На Калинина",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [
       "../img/complex/moscow.jpg",
@@ -360,8 +360,8 @@
     "name": "студия",
     "housingComplexName": "На Ломоносова",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [],
     "planAdvantages": [
@@ -377,8 +377,8 @@
     "name": "квартира",
     "housingComplexName": "Васильки",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [],
     "planAdvantages": [
@@ -394,8 +394,8 @@
     "name": "студия",
     "housingComplexName": "ZNAK",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [
       "../img/complex/defans.jpg",
@@ -430,8 +430,8 @@
     "name": "студия",
     "housingComplexName": "На Ломоносова",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [
       "../img/complex/moscow.jpg"
@@ -449,8 +449,8 @@
     "name": "квартира",
     "housingComplexName": "На Калинина",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [
       "../img/complex/defans.jpg",
@@ -470,8 +470,8 @@
     "name": "студия",
     "housingComplexName": "На Калинина",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [
       "../img/complex/moscow.jpg",
@@ -490,8 +490,8 @@
     "name": "студия",
     "housingComplexName": "На Ломоносова",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [],
     "planAdvantages": [
@@ -507,8 +507,8 @@
     "name": "квартира",
     "housingComplexName": "Васильки",
     "planLink": [
-      "../img/flat/flat-01.png",
-      "../img/flat/flat-02.png"
+      "img/flat/flat-01.png",
+      "img/flat/flat-02.png"
     ],
     "photos": [],
     "planAdvantages": [
