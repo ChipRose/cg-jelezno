@@ -1,0 +1,522 @@
+[
+  {
+    "id": 1,
+    "name": "квартира",
+    "housingComplexName": "ZNAK",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/defans.jpg",
+      "../img/complex/moscow.jpg"
+    ],
+    "planAdvantages": [
+      "moreToilets","bigLoggia", "laundry"
+    ],
+    "sameLayoutFlatCount": 15,
+    "minPrice": 2.5,
+    "roomsQuantity": 1,
+    "square": 29
+  },
+  {
+    "id": 2,
+    "name": "квартира",
+    "housingComplexName": "ZNAK",
+    "planLink": [
+      "../img/flat/flat-01.png"
+    ],
+    "photos": [],
+    "planAdvantages": [
+      "moreToilets","bigLoggia", "laundry", "kitchenLivingRoom"
+    ],
+    "sameLayoutFlatCount": 4,
+    "minPrice": 2.7,
+    "roomsQuantity": 2,
+    "square": 27
+  },
+  {
+    "id": 3,
+    "name": "студия",
+    "housingComplexName": "На Ломоносова",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/moscow.jpg"
+    ],
+    "planAdvantages": [
+      "laundry", "kitchenLivingRoom"
+    ],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 3.7,
+    "roomsQuantity": 1,
+    "square": 32
+  },
+  {
+    "id": 4,
+    "name": "квартира",
+    "housingComplexName": "ZNAK",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/defans.jpg",
+      "../img/complex/moscow.jpg",
+      "../img/complex/defans.jpg"
+    ],
+    "planAdvantages": [
+      "bigLoggia", "loggia", "laundry", "kitchenLivingRoom"
+    ],
+    "sameLayoutFlatCount": 20,
+    "minPrice": 3,
+    "roomsQuantity": 1,
+    "square": 32
+  },
+  {
+    "id": 5,
+    "name": "студия",
+    "housingComplexName": "На Калинина",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/moscow.jpg",
+      "../img/complex/architector.jpg"
+    ],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry", "moreToilets"
+    ],
+    "sameLayoutFlatCount": 5,
+    "minPrice": 2.7,
+    "roomsQuantity": 1,
+    "square": 33
+  },
+  {
+    "id": 6,
+    "name": "студия",
+    "housingComplexName": "На Ломоносова",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry", "moreToilets", "loggia"
+    ],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 3,
+    "roomsQuantity": 1,
+    "square": 50
+  },
+  {
+    "id": 7,
+    "name": "квартира",
+    "housingComplexName": "Васильки",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry", "moreToilets", "loggia", "kitchenLivingRoom"
+    ],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 3.2,
+    "roomsQuantity": 5,
+    "square": 50
+  },
+  {
+    "id": 8,
+    "name": "студия",
+    "housingComplexName": "ZNAK",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/defans.jpg",
+      "../img/complex/moscow.jpg"
+    ],
+    "planAdvantages": [
+      "bigLoggia", "laundry", "loggia", "kitchenLivingRoom"
+    ],
+    "sameLayoutFlatCount": 15,
+    "minPrice": 3,
+    "roomsQuantity": 1,
+    "square": 46.9
+  },
+  {
+    "id": 9,
+    "name": "квартира",
+    "housingComplexName": "ZNAK",
+    "planLink": [
+      "../img/flat/flat-01.png"
+    ],
+    "photos": [],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry", "loggia"
+    ],
+    "sameLayoutFlatCount": 4,
+    "minPrice": 3.4,
+    "roomsQuantity": 2,
+    "square": 36
+  },
+  {
+    "id": 10,
+    "name": "студия",
+    "housingComplexName": "На Ломоносова",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/moscow.jpg"
+    ],
+    "planAdvantages": [
+      "wardrobe", "laundry", "moreToilets", "loggia", "kitchenLivingRoom"
+    ],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 3.7,
+    "roomsQuantity": 1,
+    "square": 35.7
+  },
+  {
+    "id": 11,
+    "name": "квартира",
+    "housingComplexName": "На Калинина",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/defans.jpg",
+      "../img/complex/moscow.jpg",
+      "../img/complex/defans.jpg"
+    ],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "moreToilets", "loggia", "kitchenLivingRoom"
+    ],
+    "sameLayoutFlatCount": 20,
+    "minPrice": 3,
+    "roomsQuantity": 2,
+    "square": 32
+  },
+  {
+    "id": 12,
+    "name": "студия",
+    "housingComplexName": "На Калинина",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/moscow.jpg",
+      "../img/complex/architector.jpg"
+    ],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry", "moreToilets", "kitchenLivingRoom"
+    ],
+    "sameLayoutFlatCount": 5,
+    "minPrice": 2.75,
+    "roomsQuantity": 1,
+    "square": 43.7
+  },
+  {
+    "id": 13,
+    "name": "студия",
+    "housingComplexName": "На Ломоносова",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry", "kitchenLivingRoom"
+    ],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 2.5,
+    "roomsQuantity": 1,
+    "square": 50
+  },
+  {
+    "id": 14,
+    "name": "квартира",
+    "housingComplexName": "Васильки",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry", "moreToilets", "kitchenLivingRoom"
+    ],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 2.5,
+    "roomsQuantity": 1,
+    "square": 43
+  },
+  {
+    "id": 15,
+    "name": "студия",
+    "housingComplexName": "ZNAK",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/defans.jpg",
+      "../img/complex/moscow.jpg"
+    ],
+    "planAdvantages": [
+      "bigLoggia", "loggia", "kitchenLivingRoom"
+    ],
+    "sameLayoutFlatCount": 15,
+    "minPrice": 3.1,
+    "roomsQuantity": 1,
+    "square": 47
+  },
+  {
+    "id": 16,
+    "name": "квартира",
+    "housingComplexName": "ZNAK",
+    "planLink": [
+      "../img/flat/flat-01.png"
+    ],
+    "photos": [],
+    "planAdvantages": [
+      "laundry", "moreToilets", "loggia", "kitchenLivingRoom"
+    ],
+    "sameLayoutFlatCount": 4,
+    "minPrice": 3.3,
+    "roomsQuantity": 4,
+    "square": 50
+  },
+  {
+    "id": 17,
+    "name": "студия",
+    "housingComplexName": "На Ломоносова",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/moscow.jpg"
+    ],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry", "loggia", "kitchenLivingRoom"
+    ],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 3.7,
+    "roomsQuantity": 1,
+    "square": 34.6
+  },
+  {
+    "id": 18,
+    "name": "квартира",
+    "housingComplexName": "ZNAK",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/defans.jpg",
+      "../img/complex/moscow.jpg",
+      "../img/complex/defans.jpg"
+    ],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry"
+    ],
+    "sameLayoutFlatCount": 20,
+    "minPrice": 3,
+    "roomsQuantity": 1,
+    "square": 43
+  },
+  {
+    "id": 19,
+    "name": "студия",
+    "housingComplexName": "На Калинина",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/moscow.jpg",
+      "../img/complex/architector.jpg"
+    ],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "loggia", "kitchenLivingRoom"
+    ],
+    "sameLayoutFlatCount": 5,
+    "minPrice": 2.7,
+    "roomsQuantity": 1,
+    "square": 41.4
+  },
+  {
+    "id": 20,
+    "name": "студия",
+    "housingComplexName": "На Ломоносова",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [],
+    "planAdvantages": [
+      "bigLoggia"
+    ],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 3,
+    "roomsQuantity": 1,
+    "square": 50
+  },
+  {
+    "id": 21,
+    "name": "квартира",
+    "housingComplexName": "Васильки",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry"
+    ],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 3.2,
+    "roomsQuantity": 5,
+    "square": 50
+  },
+  {
+    "id": 22,
+    "name": "студия",
+    "housingComplexName": "ZNAK",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/defans.jpg",
+      "../img/complex/moscow.jpg"
+    ],
+    "planAdvantages": [
+      "moreToilets", "loggia", "kitchenLivingRoom"
+    ],
+    "sameLayoutFlatCount": 15,
+    "minPrice": 2.4,
+    "roomsQuantity": 1,
+    "square": 43.2
+  },
+  {
+    "id": 23,
+    "name": "квартира",
+    "housingComplexName": "ZNAK",
+    "planLink": [
+      "../img/flat/flat-01.png"
+    ],
+    "photos": [],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "kitchenLivingRoom"
+    ],
+    "sameLayoutFlatCount": 4,
+    "minPrice": 2.7,
+    "roomsQuantity": 2,
+    "square": 45.7
+  },
+  {
+    "id": 24,
+    "name": "студия",
+    "housingComplexName": "На Ломоносова",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/moscow.jpg"
+    ],
+    "planAdvantages": [
+      "bigLoggia", "loggia", "kitchenLivingRoom"
+    ],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 3.7,
+    "roomsQuantity": 1,
+    "square": 35
+  },
+  {
+    "id": 25,
+    "name": "квартира",
+    "housingComplexName": "На Калинина",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/defans.jpg",
+      "../img/complex/moscow.jpg",
+      "../img/complex/defans.jpg"
+    ],
+    "planAdvantages": [
+      "moreToilets", "loggia", "kitchenLivingRoom"
+    ],
+    "sameLayoutFlatCount": 20,
+    "minPrice": 3.7,
+    "roomsQuantity": 5,
+    "square": 30.5
+  },
+  {
+    "id": 26,
+    "name": "студия",
+    "housingComplexName": "На Калинина",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [
+      "../img/complex/moscow.jpg",
+      "../img/complex/architector.jpg"
+    ],
+    "planAdvantages": [
+      "loggia", "kitchenLivingRoom"
+    ],
+    "sameLayoutFlatCount": 5,
+    "minPrice": 2.7,
+    "roomsQuantity": 1,
+    "square": 32
+  },
+  {
+    "id": 27,
+    "name": "студия",
+    "housingComplexName": "На Ломоносова",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe", "laundry", "kitchenLivingRoom"
+    ],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 2.5,
+    "roomsQuantity": 1,
+    "square": 30
+  },
+  {
+    "id": 28,
+    "name": "квартира",
+    "housingComplexName": "Васильки",
+    "planLink": [
+      "../img/flat/flat-01.png",
+      "../img/flat/flat-02.png"
+    ],
+    "photos": [],
+    "planAdvantages": [
+      "bigLoggia", "wardrobe"
+    ],
+    "sameLayoutFlatCount": 12,
+    "minPrice": 2.5,
+    "roomsQuantity": 1,
+    "square": 50
+  }
+]
